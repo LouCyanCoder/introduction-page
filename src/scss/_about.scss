@@ -1,0 +1,40 @@
+/* Section About */
+.about {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	background-color: #ebebeb;
+	padding: 2rem 15% 6rem 15%;
+
+	&__img {
+		width: 45%;
+		max-width: 30rem;
+		height: 30rem;
+		border-radius: 50%;
+		object-fit: cover;
+		border: #f3740c solid 5px;
+	}
+
+	&__desc {
+		width: 50%;
+		font-size: 1.25rem;
+	}
+
+	&__underline {
+		border-bottom: 5px solid #5dccff;
+	}
+
+	&__cta {
+		font-size: 1.5rem;
+	}
+}
+
+.about .heading {
+	width: 100%;
+	color: #00154e;
+}
+.about .button {
+	color: #00154e;
+	background-color: #f3740c;
+	font-weight: 500;
+}

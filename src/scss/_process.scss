@@ -1,0 +1,45 @@
+/* Section Process */
+.process {
+	background-color: #ebebeb;
+	padding-top: 5rem;
+
+	&__quote {
+		font-size: 1.75rem;
+		text-align: center;
+		margin-bottom: 5rem;
+	}
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		color: #ffffff;
+		background-color: #232323;
+		padding: 6rem 15% 3rem 15%;
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 20%;
+		font-size: 1.25rem;
+		text-align: center;
+		position: relative;
+	}
+
+	&__circle {
+		width: 8rem;
+		height: 8rem;
+		background-color: #ebebeb;
+		border-radius: 100%;
+		position: absolute;
+		top: -10rem;
+		left: 15%;
+	}
+
+	&__title {
+		color: #f3740c;
+		font-size: 1.75rem;
+		font-weight: 800;
+	}
+}

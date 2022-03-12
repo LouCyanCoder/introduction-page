@@ -1,0 +1,39 @@
+/* Navigation */
+.nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100vw;
+	height: 4rem;
+	background-color: #ffffff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 2;
+
+	&__logo {
+		height: 3rem;
+		margin: 0 4rem 0 4rem;
+	}
+
+	&__container {
+		display: flex;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	&__link {
+		color: #ebebeb;
+		background-color: #00154e;
+		font-size: 1.1rem;
+		text-decoration: none;
+		text-transform: uppercase;
+		padding: 1.5rem 4rem;
+
+		&:hover {
+			color: #232323;
+			background-color: #5dccff;
+		}
+	}
+}
