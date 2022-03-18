@@ -1,5 +1,8 @@
-import logo from './logo.svg';
+
 import './scss/style.scss';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 // SVGs imported into the components
 import {ReactComponent as GitHubSVG} from './img/github.svg';
@@ -22,6 +25,9 @@ import ContactForm from './Components/ContactForm';
 
 function App() {
 
+useEffect(() => {
+    AOS.init();
+    }, []);
 
   return (
     <div className="portfolio-app">

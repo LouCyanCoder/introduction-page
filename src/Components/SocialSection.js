@@ -1,8 +1,8 @@
 import React from 'react'
 
 // SVGs imported into the components
-import {ReactComponent as GitHubSVG} from '../img/github.svg';
-import {ReactComponent as LinkedinSVG} from '../img/linkedin.svg';
+import { ReactComponent as GitHubSVG } from '../img/github.svg';
+import { ReactComponent as LinkedinSVG } from '../img/linkedin.svg';
 import { ReactComponent as InstagramSVG } from '../img/instagram.svg';
 
 const SocialSection = () => {
