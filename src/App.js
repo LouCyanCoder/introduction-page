@@ -38,13 +38,13 @@ useEffect(() => {
 
         <ProcessSection />
 
-        <SkillsSection />
-
-        <PortfolioSection />
+        <AboutSection />
 
         <SocialSection />
-          
-        <AboutSection />
+      
+        <SkillsSection />
+      
+        <PortfolioSection />
 
         <ContactForm />
 

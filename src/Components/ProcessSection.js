@@ -19,8 +19,10 @@ const ProcessSection = () => {
 
           <div className="process__container">
               
-              <div className="process__item" data-aos="fade-right">
-                <div className="process__circle"></div>
+            <div className="process__item" data-aos="fade-right">
+              <div className="process__circle">
+                <i class="fa-solid fa-comments"></i>
+              </div>
                 <h4 className="process__title">Discover</h4>
                   <p>
                     Tell me about your project and we brainstorm together the features to create a plan for your product
@@ -29,8 +31,10 @@ const ProcessSection = () => {
 
             </div>
 
-            <div className="process__item" data-aos="fade-down">
-                <div className="process__circle"></div>
+            <div className="process__item" data-aos="fade-up">
+              <div className="process__circle">
+                <i class="fa-solid fa-pen-ruler"></i>
+              </div>
                 <h4 className="process__title">Design</h4>
                   <p>
                     We design the wireframe and agree together how to create the best experience for your users to
@@ -39,7 +43,9 @@ const ProcessSection = () => {
             </div>
 
             <div className="process__item" data-aos="fade-up">
-                <div className="process__circle"></div>
+              <div className="process__circle">
+                <i class="fa-solid fa-code"></i>
+              </div>
                 <h4 className="process__title">Deploy</h4>
                   <p>
                       We protoype and develop your product. We work together intensely to incorporate your feedback.
@@ -48,7 +54,9 @@ const ProcessSection = () => {
             </div>
 
             <div className="process__item" data-aos="fade-left">
-                <div className="process__circle"></div>
+              <div className="process__circle">
+                <i class="fa-solid fa-cloud-arrow-up"></i>
+              </div>
                 <h4 className="process__title">Be Ready</h4>
                   <p>
                     We deploy your product and now your website is ready to get the traction. Get out there and grow your

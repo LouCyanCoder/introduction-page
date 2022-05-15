@@ -29,11 +29,12 @@
 		font-size: 1.1rem;
 		text-decoration: none;
 		text-transform: uppercase;
-		padding: 1.5rem 4rem;
+		padding: 1.38rem 4rem;
 
 		&:hover {
 			color: #232323;
 			background-color: #5dccff;
+			transition: 0.7s;
 		}
 	}
 }

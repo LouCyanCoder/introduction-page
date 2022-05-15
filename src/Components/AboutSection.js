@@ -11,7 +11,7 @@ const AboutSection = () => {
             <p> During my time in marketing/polygraphy I have helped to establish over 200 new companies mostly for the
                 vietnamese community in Czech Republic.</p>
             <p>I am open to learning new technologies and enjoy working with people
-                <span className="about__underline">who are as passionate about all web-related as me</span>.
+                <span className="about__underline"> who are as passionate about all web-related as me</span>.
             </p>
             <p>I have worked for clients all across the world but currently I am based in Prague, Czech Republic.</p>
             <p>I like animals, gaming, fitness and martial arts. If I do not develop, you can also find me dabbling in

@@ -3,7 +3,7 @@ import React from 'react'
 // SVGs imported into the components
 import { ReactComponent as GitHubSVG } from '../img/github.svg';
 import { ReactComponent as LinkedinSVG } from '../img/linkedin.svg';
-import { ReactComponent as InstagramSVG } from '../img/instagram.svg';
+import { ReactComponent as CodepenSVG } from '../img/codepen.svg';
 
 
 const Footer = () => {
@@ -23,7 +23,7 @@ const Footer = () => {
             </a>
 
             <a href="#" target="_blank" className="social__link instagram">
-                <InstagramSVG />
+                <CodepenSVG />
             </a>
         </div>
 

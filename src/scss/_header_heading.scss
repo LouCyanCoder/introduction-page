@@ -1,23 +1,31 @@
 /* Header */
 .header {
-	height: 80vh;
-	color: #ebebeb;
-	background-image: url("../img/cyan_wallpaper.jpg");
-	background-size: cover;
+	display:flex;
+	flex-direction: column;
+	// justify-content: center;
+	align-items: center;
+	height: 100vh;
+	color: #e8e8e8;
+	background-image: url("../img/wallpaper-desktop.png");
+	background-color: #333232;
+	background-size: contain;
 	background-position: center;
-	box-shadow: inset 0 0 20em 7em #000;
+	background-repeat: no-repeat;
+	box-shadow: inset 0 0 50em 4em #000;
 	text-align: center;
-	margin-top: 20vh;
-	padding-top: 10rem;
+	margin-top: 9vh;
+	
+	
 
 	&__title {
-		font-size: 4rem;
+		font-size: 3rem;
 		font-weight: normal;
-		margin-bottom: 0;
+		margin: 3.5em 0 1em 0;
+	
 	}
 
 	&__desc {
-		font-size: 3rem;
+		font-size: 1.5rem;
 		font-weight: normal;
 		margin-top: 0;
 	}

@@ -28,13 +28,28 @@
 	}
 
 	&__circle {
+		display:flex;
+		align-items: center;
+		justify-content: center;
 		width: 8rem;
 		height: 8rem;
 		background-color: #ebebeb;
+		color:#232323;
 		border-radius: 100%;
 		position: absolute;
 		top: -10rem;
 		left: 15%;
+
+		i{
+			font-size: 2.5em;
+			transition: 0.5s;
+			&:hover {
+				transform: rotate(-5deg) scale(1.2);
+				transition: 0.5s;
+				
+			}
+		}
+
 	}
 
 	&__title {
