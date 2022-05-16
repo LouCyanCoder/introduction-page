@@ -1,6 +1,6 @@
 /* Header */
 .header {
-	display:flex;
+	display: flex;
 	flex-direction: column;
 	// justify-content: center;
 	align-items: center;
@@ -12,37 +12,58 @@
 	background-position: center 4em;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
-	box-shadow: inset 0 0 50em 4em #000;
+	box-shadow: inset 0 0 40em 4em #000;
 	text-align: center;
 	margin-top: 4rem;
-	font-family: 'Share Tech Mono', monospace;
+	font-family: "Share Tech Mono", monospace;
 	z-index: 1;
 
-
-	
+	@include mq(1225px) {
+		height: 80vh;
+		box-shadow: inset 0 0 30em 3em #000;
+	}
+	@include mq(1025px) {
+		height: 60vh;
+		box-shadow: inset 0 0 20em 2em #000;
+	}
+	@include mq(768px) {
+		height: 45vh;
+		box-shadow: inset 0 0 10em 1em #000;
+	}
 
 	&__title {
 		font-size: 3rem;
 		font-weight: normal;
 		margin: 3em 0 1em 0;
 		z-index: 0;
-	
+		@include mq(1225px) {
+			font-size: 2.7rem;
+			margin: 3em 0 0.7em 0;
+		}
+		@include mq(1025px) {
+			font-size: 2.3rem;
+			margin: 2.7em 0 0.5em 0;
+		}
+		@include mq(768px) {
+			font-size: 2rem;
+			margin: 2em 0 0.3em 0;
+		}
 	}
 
 	&__desc {
-		font-size: 1.5rem;
 		font-weight: normal;
 		margin-top: 0;
 	}
 
 	&__link {
 		color: #f3740c;
-		border-bottom: 5px solid #ebebeb;
 		font-weight: bold;
 		text-decoration: none;
 
 		&:hover {
-			opacity: 0.8;
+			border-bottom: 5px solid #ebebeb;
+			color: #ffffff;
+			transition: 0.5s;
 		}
 	}
 }

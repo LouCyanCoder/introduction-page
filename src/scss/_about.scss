@@ -3,17 +3,16 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	align-items: center;
 	background-color: #ebebeb;
 	padding: 2rem 15% 6rem 15%;
 
 	&__img {
-		
+		// width: 40%;
 		width: 25rem;
 		height: 25rem;
 		border-radius: 50%;
 		object-fit: cover;
-		
+		// border: #f3740c solid 5px;
 	}
 
 	&__desc {
@@ -33,6 +32,15 @@
 .about .heading {
 	width: 100%;
 	color: #00154e;
+	@include mq(1225px) {
+		font-size: 3rem;
+	}
+	@include mq(1025px) {
+		font-size: 2.5rem;
+	}
+	@include mq(768px) {
+		font-size: 2rem;
+	}
 }
 .about .button {
 	color: #00154e;

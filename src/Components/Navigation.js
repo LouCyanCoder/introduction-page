@@ -16,11 +16,11 @@ const Navigation = () => {
 		//     </ul>
 		// </nav>
 		<nav
-			class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"
+			className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top mb-5"
 			id="navbar"
 		>
-			<div class="container-fluid">
-				<a class="navbar-brand" href="#">
+			<div className="container-fluid">
+				<a className="navbar-brand" href="#">
 					<img
 						src={require("../img/lcd-favicon.png")}
 						alt="Logo"
@@ -29,7 +29,7 @@ const Navigation = () => {
 					LouCyanCoder
 				</a>
 				<button
-					class="navbar-toggler"
+					className="navbar-toggler"
 					type="button"
 					data-mdb-toggle="collapse"
 					data-mdb-target="#navbarNav"
@@ -37,38 +37,38 @@ const Navigation = () => {
 					aria-expanded="false"
 					aria-label="Toggle navigation"
 				>
-					<i class="fas fa-bars"></i>
+					<i className="fas fa-bars"></i>
 				</button>
 
-				<div class="collapse navbar-collapse" id="navbarNav">
-					<ul class="navbar-nav ms-auto">
-						<li class="nav-item">
-							<a class="nav-link" aria-current="page" href="#header">
-								<i class="fa-solid fa-house-chimney me-2"></i>
+				<div className="collapse navbar-collapse" id="navbarNav">
+					<ul className="navbar-nav ms-auto">
+						<li className="nav-item">
+							<a className="nav-link" aria-current="page" href="#header">
+								<i className="fa-solid fa-house-chimney me-2"></i>
 								Home
 							</a>
 						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#about">
-								<i class="fa-solid fa-address-card me-2"></i>
+						<li className="nav-item">
+							<a className="nav-link" href="#about">
+								<i className="fa-solid fa-address-card me-2"></i>
 								About me
 							</a>
 						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#skills">
-								<i class="fa-solid fa-code me-2"></i>
+						<li className="nav-item">
+							<a className="nav-link" href="#skills">
+								<i className="fa-solid fa-code me-2"></i>
 								Skills
 							</a>
 						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#portfolio">
-								<i class="fa-solid fa-images me-2"></i>
+						<li className="nav-item">
+							<a className="nav-link" href="#portfolio">
+								<i className="fa-solid fa-images me-2"></i>
 								Portfolio
 							</a>
 						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#contact">
-								<i class="fa-solid fa-paper-plane me-2"></i>
+						<li className="nav-item">
+							<a className="nav-link" href="#contact">
+								<i className="fa-solid fa-paper-plane me-2"></i>
 								Contact
 							</a>
 						</li>
