@@ -3,16 +3,17 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	align-items: center;
 	background-color: #ebebeb;
 	padding: 2rem 15% 6rem 15%;
 
 	&__img {
-		width: 45%;
-		max-width: 30rem;
-		height: 30rem;
+		
+		width: 25rem;
+		height: 25rem;
 		border-radius: 50%;
 		object-fit: cover;
-		border: #f3740c solid 5px;
+		
 	}
 
 	&__desc {

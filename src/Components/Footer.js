@@ -13,7 +13,7 @@ const Footer = () => {
             <div className="footer__line"></div>Nice to meet you!<div className="footer__line"></div>
         </h3>
 
-        <div className="social__container">
+        <div className="social__container" data-aos="flip-up">
             <a href="#" target="_blank" className="social__link github">
                 <GitHubSVG />
             </a>

@@ -42,14 +42,6 @@ const SkillsSection = () => {
             </div>
 
             <div className="skill__item">
-                <div className="skill__label">Sass</div>
-                
-                <div className="skill__logo">
-                    <img src={require("../img/Sass_logo.png")} alt="skills-img" className="skill__logo--img" />
-                </div>
-            </div>
-
-            <div className="skill__item">
                 <div className="skill__label">JavaScript</div>
                 
                 <div className="skill__logo">
@@ -78,6 +70,14 @@ const SkillsSection = () => {
                 
                 <div className="skill__logo">
                     <img src={require("../img/Laravel_logo.png")} alt="skills-img" className="skill__logo--img" />
+                </div>
+            </div>
+
+            <div className="skill__item">
+                <div className="skill__label">Sass</div>
+                
+                <div className="skill__logo">
+                    <img src={require("../img/Sass_logo.png")} alt="skills-img" className="skill__logo--img" />
                 </div>
             </div>
 

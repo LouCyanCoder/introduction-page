@@ -10,7 +10,7 @@ const SocialSection = () => {
         <section className="social">
         <h3 className="heading">Find me here</h3>
 
-        <div className="social__container">
+        <div className="social__container" data-aos="flip-up">
             <a href="#" target="_blank" className="social__link github">
                 <GitHubSVG />
             </a>
