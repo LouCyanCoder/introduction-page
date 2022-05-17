@@ -55,7 +55,7 @@ const Navigation = () => {
 							</a>
 						</li>
 						<li className="nav-item">
-							<a className="nav-link" href="#skills">
+							<a className="nav-link" href="#skillsReel">
 								<i className="fa-solid fa-code me-2"></i>
 								Skills
 							</a>
