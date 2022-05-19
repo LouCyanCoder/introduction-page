@@ -8,13 +8,14 @@ import JSlogo from '../img/skills/JavaScript_logo.png';
 import Sasslogo from '../img/skills/Sass_logo.png';
 import Laravellogo from '../img/skills/Laravel_logo.png';
 import Reactlogo from '../img/skills/React_logo.png';
-import MySQLlogo from '../img/skills/PHP_mySQL.png';
+import MySQLlogo from '../img/skills/Mysql_logo.png';
 import Gitlogo from '../img/skills/Git_logo.png';
+import PHPlogo from '../img/skills/PHP_logo.png';
 // arrows for the reel
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 
 // setting up images in an array
-const images = [HTMLlogo, CSSlogo, JSlogo, Sasslogo, Laravellogo, Reactlogo, MySQLlogo, Gitlogo];
+const images = [HTMLlogo, CSSlogo, JSlogo, Sasslogo, Laravellogo, Reactlogo, MySQLlogo, Gitlogo, PHPlogo];
 
 
 // arrows for the reel
@@ -46,15 +47,15 @@ const SkillsReel = () => {
         lazyLoad: true,
         slidesToShow: 3,
         centerMode: true,
-        centerPadding: 0,
+        centerPadding: 2,
         nextArrow: <NextArrow />,
         prevArrow: <PrevArrow />,
-        // variableWidth: true,
+      
         centerPadding: "90px",
         autoplay: true,
-        autoplaySpeed: 3000,
+        autoplaySpeed: 2500,
         speed: 2000,
-        cssEase: "linear",
+       
        
         beforeChange: (current, next) => setImageIndex(next)
     };

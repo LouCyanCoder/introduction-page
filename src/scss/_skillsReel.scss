@@ -4,31 +4,47 @@
 .SkillsReel {
 	width: 80%;
 	margin: 3rem auto;
-	height: 420px;
+	padding: 1.5rem 0;
+
 	.heading {
 		color: #00154e;
-		margin-bottom: 0.5em;
+		margin-bottom: 1em;
 		@include mq(1225px) {
 			font-size: 3rem;
+
+			margin: 2.5rem auto;
 		}
 		@include mq(1025px) {
 			font-size: 2.5rem;
+
+			margin: 1rem auto;
 		}
 		@include mq(768px) {
 			font-size: 2rem;
+
+			margin: 0.5rem auto;
 		}
 	}
 }
 
 .slide {
-	transform: scale(0.4);
+	transform: scale(0.35);
 	transition: 2000ms;
-	opacity: 0.4;
+	opacity: 0.2;
 
 	img {
 		width: auto;
-		height: 15rem;
+		height: 13rem;
 		margin: auto;
+		@include mq(1225px) {
+			height: 10rem;
+		}
+		@include mq(1025px) {
+			height: 8rem;
+		}
+		@include mq(768px) {
+			height: 3rem;
+		}
 	}
 }
 
@@ -38,18 +54,17 @@
 }
 
 .arrow {
-	background-color: #fff;
 	position: absolute;
 	cursor: pointer;
 	z-index: 10;
 
 	svg {
-		transition: color 300ms;
+		transition: 250ms;
 
 		&:hover {
 			color: #00154e;
 			transform: scale(1.5);
-			transition: transform 300ms;
+			transition: transform 250ms;
 		}
 	}
 }

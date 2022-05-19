@@ -27,5 +27,11 @@
 		@include mq(768px) {
 			grid-template-columns: 1fr;
 		}
+
+		.card {
+			img {
+				padding: 10px;
+			}
+		}
 	}
 }

@@ -46,7 +46,7 @@ const AboutSection = () => {
 				</h4>
 
 				<a href="#contact">
-					<button className="button">Contact me</button>
+					<button className="btn btn-warning m-auto">Contact me</button>
 				</a>
 			</div>
 		</section>

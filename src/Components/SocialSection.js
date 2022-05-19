@@ -12,7 +12,7 @@ const SocialSection = () => {
 
 			<div className="social__container">
 				<a
-					href="#"
+					href="https://github.com/LouCyanCoder"
 					target="_blank"
 					className="social__link github"
 					data-aos="flip-up"
@@ -30,7 +30,7 @@ const SocialSection = () => {
 				</a>
 
 				<a
-					href="#"
+					href="https://codepen.io/lou-cyan"
 					target="_blank"
 					className="social__link codepen"
 					data-aos="flip-up"
