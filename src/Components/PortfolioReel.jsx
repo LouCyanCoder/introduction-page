@@ -24,7 +24,7 @@ const PortfolioReel = () => {
 	}, []);
 
 	return (
-		<section className="portfolio">
+		<section className="portfolio" id="portfolio">
 			<h2 className="heading">My portfolio</h2>
 			<div className="portfolio-container">
 				<article
@@ -49,6 +49,7 @@ const PortfolioReel = () => {
 								className="button-site"
 								target="_blank"
 							>
+								<i class="fa-solid fa-window-restore mx-1"></i>
 								Visit site
 							</a>
 							<a
@@ -56,6 +57,7 @@ const PortfolioReel = () => {
 								className="button-github"
 								target="_blank"
 							>
+								<i class="fa-brands fa-github mx-1"></i>
 								Github
 							</a>
 						</div>
@@ -79,10 +81,19 @@ const PortfolioReel = () => {
 						</span>
 						<div className="panel-description_buttons">
 							<a
+								href="https://loucyancoder.github.io/hipster-coffee-deployment/"
+								className="button-site"
+								target="_blank"
+							>
+								<i class="fa-solid fa-window-restore mx-1"></i>
+								Visit site
+							</a>
+							<a
 								href="https://github.com/LouCyanCoder/generic-hipster-coffee"
 								className="button-github"
 								target="_blank"
 							>
+								<i class="fa-brands fa-github mx-1"></i>
 								Github
 							</a>
 						</div>
@@ -111,6 +122,7 @@ const PortfolioReel = () => {
 								className="button-site"
 								target="_blank"
 							>
+								<i class="fa-solid fa-window-restore mx-1"></i>
 								Visit site
 							</a>
 							<a
@@ -118,6 +130,7 @@ const PortfolioReel = () => {
 								className="button-github"
 								target="_blank"
 							>
+								<i class="fa-brands fa-github mx-1"></i>
 								Github
 							</a>
 						</div>

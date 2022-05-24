@@ -1,17 +1,37 @@
 .portfolio {
-	height: 100vh;
+	height: 80vh;
 	margin: 30px;
+
+	.heading {
+		color: #00154e;
+		margin-bottom: 0.2em;
+		@include mq(1225px) {
+			font-size: 3rem;
+
+			margin: 2.5rem auto;
+		}
+		@include mq(1025px) {
+			font-size: 2.5rem;
+
+			margin: 1rem auto;
+		}
+		@include mq(768px) {
+			font-size: 2rem;
+
+			margin: 0.5rem auto;
+		}
+	}
 	&-container {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 
 		.panel {
-			background-size: auto 120%;
+			background-size: auto 145%;
 			// background-position: center;
 			background-repeat: no-repeat;
 			opacity: 0.7;
-			height: 80vh;
+			height: 65vh;
 			border-radius: 50px;
 			color: #fff;
 			flex: 0.5;
@@ -22,6 +42,7 @@
 			border: 1px solid rgba(0, 0, 0, 0.25);
 			@media (max-width: 700px) {
 				height: 70vh;
+				margin: 3px;
 			}
 
 			&-description {
@@ -51,11 +72,12 @@
 			.panel-description {
 				opacity: 1;
 				width: 60%;
-				transition: opacity 0.4s ease-in 0.5s;
+				transition: opacity 0.7s ease-in 0.5s;
 			}
 		}
 	}
 }
+
 @media (max-width: 480px) {
 	.panel:nth-of-type(4),
 	.panel:nth-of-type(5) {
@@ -65,6 +87,7 @@
 
 .button-github {
 	padding: 10px 20px;
+	width: 7em;
 	border-radius: 5px;
 	background-color: #e79e00;
 	font-weight: bold;
@@ -72,6 +95,7 @@
 	transition: 0.5s ease-in;
 	text-decoration: none;
 	display: inline-block;
+	text-align: center;
 
 	&:hover {
 		box-shadow: -5px 5px 5px 0px rgba(0, 0, 0, 0.75);
@@ -79,7 +103,9 @@
 	}
 }
 .button-site {
+	text-align: center;
 	padding: 10px 20px;
+	width: 7em;
 	border-radius: 5px;
 	background-color: #003296;
 	font-weight: bold;
