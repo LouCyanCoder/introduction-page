@@ -19,6 +19,7 @@ import AboutSection from "./Components/AboutSection";
 import SocialSection from "./Components/SocialSection";
 import ContactForm from "./Components/ContactForm";
 import SkillsReel from "./Components/SkillsReel";
+import PortfolioReel from "./Components/PortfolioReel";
 
 function App() {
 	useEffect(() => {
@@ -39,10 +40,12 @@ function App() {
 
 			<SocialSection />
 
-			{/* has been replaced by SkillsReel */}
+			{/* has been replaced by SkillsReel and PortfolioReel */}
 			{/* <SkillsSection /> */}
 
-			<PortfolioSection />
+			{/* <PortfolioSection /> */}
+
+			<PortfolioReel />
 
 			<ContactForm />
 

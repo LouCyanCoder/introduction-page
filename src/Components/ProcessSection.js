@@ -22,7 +22,7 @@ const ProcessSection = () => {
 			<div className="process__container">
 				<div className="process__item" data-aos="fade-up">
 					<div className="process__circle">
-						<i class="fa-solid fa-comments"></i>
+						<i className="fa-solid fa-comments"></i>
 					</div>
 					<h4 className="process__title">Discover</h4>
 					<p data-aos="fade-up">
@@ -33,7 +33,7 @@ const ProcessSection = () => {
 
 				<div className="process__item" data-aos="fade-up">
 					<div className="process__circle">
-						<i class="fa-solid fa-pen-ruler"></i>
+						<i className="fa-solid fa-pen-ruler"></i>
 					</div>
 					<h4 className="process__title">Design</h4>
 					<p data-aos="fade-up">
@@ -44,7 +44,7 @@ const ProcessSection = () => {
 
 				<div className="process__item" data-aos="fade-up">
 					<div className="process__circle">
-						<i class="fa-solid fa-code"></i>
+						<i className="fa-solid fa-code"></i>
 					</div>
 					<h4 className="process__title">Be Ready</h4>
 					<p data-aos="fade-up">
@@ -55,7 +55,7 @@ const ProcessSection = () => {
 
 				<div className="process__item" data-aos="fade-up">
 					<div className="process__circle">
-						<i class="fa-solid fa-cloud-arrow-up"></i>
+						<i className="fa-solid fa-cloud-arrow-up"></i>
 					</div>
 					<h4 className="process__title">Deploy</h4>
 					<p data-aos="fade-up">

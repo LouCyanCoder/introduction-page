@@ -65,7 +65,7 @@ const SkillsReel = () => {
           <h2 className="heading">My tech stack</h2>
           <Slider {...settings}>
               {images.map((img, idx) => (
-                <div className={idx === imageIndex ? "slide activeSlide" : "slide"}>
+                <div className={idx === imageIndex ? "slide activeSlide" : "slide"} key={idx}>
                     <img src={img} alt={img} />      
                 </div>
             ))}
