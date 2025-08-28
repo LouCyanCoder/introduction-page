@@ -3,7 +3,6 @@ import React from "react";
 // SVGs imported into the components
 import { ReactComponent as GitHubSVG } from "../img/github.svg";
 import { ReactComponent as LinkedinSVG } from "../img/linkedin.svg";
-import { ReactComponent as CodepenSVG } from "../img/codepen.svg";
 
 const Footer = () => {
 	return (
@@ -17,6 +16,7 @@ const Footer = () => {
 				<a
 					href="https://github.com/LouCyanCoder"
 					target="_blank"
+					rel="noreferrer"
 					className="social__link github"
 				>
 					<GitHubSVG />
@@ -25,21 +25,16 @@ const Footer = () => {
 				<a
 					href="https://www.linkedin.com/in/lucian-nguyen-4aa223162/"
 					target="_blank"
+					rel="noreferrer"
 					className="social__link linkedin"
 				>
 					<LinkedinSVG />
 				</a>
-
-				<a
-					href="https://codepen.io/lou-cyan"
-					target="_blank"
-					className="social__link codepen"
-				>
-					<CodepenSVG />
-				</a>
 			</div>
 
-			<p className="footer__copy">Copyright &copy; Lou Cyan Designs 2022</p>
+			<p className="footer__copy">
+				Copyright &copy; Lucian Nguyen {new Date().getFullYear()}
+			</p>
 		</footer>
 	);
 };

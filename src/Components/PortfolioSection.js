@@ -8,7 +8,7 @@ const PortfolioSection = () => {
 			<div className="grid-container">
 				<article className="card text-center col">
 					<img
-						src={require("../img/projects/generic-hipster-coffee.png")}
+						src={require("../img/projects/generic-hipster-coffee.jpg")}
 						alt="project"
 						className="portfolio__img"
 					/>
@@ -31,14 +31,14 @@ const PortfolioSection = () => {
 				</article>
 				<article className="card text-center col">
 					<img
-						src={require("../img/projects/laravel-jobs.png")}
+						src={require("../img/projects/laravel-jobs.jpg")}
 						alt="project"
 						className="portfolio__img"
 					/>
 					<div className="card-body">
 						<h5 className="card-title">Laravel Jobs</h5>
 						<p className="card-text">
-							Job posting site with option to post a job listing after
+							npm start Job posting site with option to post a job listing after
 							registration, and search bar.
 						</p>
 						<p>
@@ -60,7 +60,7 @@ const PortfolioSection = () => {
 				</article>
 				<article className="card text-center col">
 					<img
-						src={require("../img/projects/who-cares.png")}
+						src={require("../img/projects/who-cares.jpg")}
 						alt="project"
 						className="portfolio__img"
 					/>

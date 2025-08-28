@@ -10,18 +10,12 @@
 		color: #00154e;
 		margin-bottom: 1em;
 		@include mq(1225px) {
-			font-size: 3rem;
-
 			margin: 2.5rem auto;
 		}
 		@include mq(1025px) {
-			font-size: 2.5rem;
-
 			margin: 1rem auto;
 		}
 		@include mq(768px) {
-			font-size: 2rem;
-
 			margin: 0.5rem auto;
 		}
 	}

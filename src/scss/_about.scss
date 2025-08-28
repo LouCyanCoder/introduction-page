@@ -62,15 +62,6 @@
 .about .heading {
 	width: 100%;
 	color: #00154e;
-	@include mq(1225px) {
-		font-size: 3rem;
-	}
-	@include mq(1025px) {
-		font-size: 2.5rem;
-	}
-	@include mq(768px) {
-		font-size: 2rem;
-	}
 }
 
 .contact-button {

@@ -17,5 +17,23 @@ body {
 	}
 }
 
-@import "navigation", "header_heading", "process", "about", "contact", "about",
-	"social", "footer", "skillsReel", "portfolioReel";
+@import "navigation", "hero", "process", "about", "contact", "about", "social",
+	"footer", "skillsReel", "portfolioReel";
+
+// utility classes
+.heading {
+	@include mq(1225px) {
+		font-size: 3rem;
+	}
+
+	@include mq(1025px) {
+		font-size: 2.5rem;
+	}
+	@include mq(768px) {
+		font-size: 2rem;
+	}
+}
+
+.color-white {
+	color: #ffffff;
+}

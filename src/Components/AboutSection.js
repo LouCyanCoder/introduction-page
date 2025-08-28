@@ -16,7 +16,7 @@ const AboutSection = () => {
 				<p>
 					<strong>My name is Lucian Nguyen. </strong> I am an aspiring junior
 					web developer and enjoy learning new trends.{" "}
-					<strong>I have a background in graphic design and IT support.</strong>{" "}
+					<strong>I have a background in graphic design and IT support.</strong>
 				</p>
 
 				<p>
@@ -39,12 +39,6 @@ const AboutSection = () => {
 				<h4 className="about__cta">
 					Get in touch and let's do something great together.
 				</h4>
-
-				<a href="#contact">
-					<button type="button" className="contact-button">
-						Contact me
-					</button>
-				</a>
 			</div>
 		</section>
 	);
