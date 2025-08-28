@@ -105,9 +105,9 @@
 	padding: 10px 20px;
 	width: 9em;
 	border-radius: 5px;
-	background-color: #e79e00;
+	background-color: $color-secondary;
 	font-weight: bold;
-	color: white;
+	color: $color-white;
 	transition: 0.5s ease-in;
 	text-decoration: none;
 	display: inline-block;
@@ -115,7 +115,7 @@
 
 	&:hover {
 		box-shadow: -5px 5px 5px 0px rgba(0, 0, 0, 0.75);
-		color: white;
+		color: $color-white;
 	}
 }
 .button-site {
@@ -125,13 +125,13 @@
 	border-radius: 5px;
 	background-color: #003296;
 	font-weight: bold;
-	color: white;
+	color: $color-white;
 	transition: 0.5s ease-in;
 	text-decoration: none;
 	display: inline-block;
 
 	&:hover {
 		box-shadow: -5px 5px 5px 0px rgba(0, 0, 0, 0.75);
-		color: white;
+		color: $color-white;
 	}
 }

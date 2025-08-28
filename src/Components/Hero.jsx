@@ -2,7 +2,7 @@ import React from "react";
 
 const Hero = () => {
 	return (
-		<hero id="hero" className="hero">
+		<div id="hero" className="hero">
 			<h1 className="hero__title">
 				Hello, I am <br />
 				<a href="#about" className="hero__link">
@@ -11,7 +11,7 @@ const Hero = () => {
 			</h1>
 			<h2 className="hero__desc">I'm a Web Developer.</h2>
 			<h5>Would you like to see my work?</h5>
-		</hero>
+		</div>
 	);
 };
 

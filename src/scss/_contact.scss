@@ -22,21 +22,25 @@
 	color: $color-white;
 	background: transparent;
 	border: none;
-	border-bottom: 1px solid #ebebeb;
+	border-bottom: 1px solid $color-grey-light;
 	outline: none;
 	font-size: 1.5rem;
 	margin-bottom: 2rem;
 	padding-top: 0.5rem;
 	padding-bottom: 0.5rem;
+
+	@include mq(768px) {
+		width: 100%;
+	}
 }
 
 .form__input::placeholder {
-	color: #ebebeb;
+	color: $color-grey-light;
 }
 
 .form__label {
 	width: 100%;
-	color: #ebebeb;
+	color: $color-grey-light;
 	font-size: 1.5rem;
 	margin-bottom: 0.5rem;
 }

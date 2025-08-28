@@ -58,12 +58,12 @@
 	}
 
 	&__link {
-		color: #f3740c;
+		color: $color-secondary;
 		font-weight: bold;
 		text-decoration: none;
 
 		&:hover {
-			border-bottom: 5px solid #ebebeb;
+			border-bottom: 5px solid $color-grey-light;
 			color: $color-white;
 			transition: 0.5s;
 		}

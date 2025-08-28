@@ -5,6 +5,7 @@ $color-secondary: #e79e00;
 $color-black: #000;
 $color-white: #fff;
 $color-grey-dark: #232323;
+$color-grey-light: #ebebeb;
 
 @mixin mq($size) {
 	@media only screen and (max-width: $size) {
