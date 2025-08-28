@@ -1,3 +1,5 @@
+@import "variables";
+
 /* Section Process */
 .process {
 	background-color: #ebebeb;
@@ -22,7 +24,7 @@
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
-		color: #ffffff;
+		color: $color-white;
 		background-color: #232323;
 		padding: 6rem 15% 3rem 15%;
 		@include mq(1225px) {

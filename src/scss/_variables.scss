@@ -1,0 +1,13 @@
+$color-primary: #00154e;
+$color-primary-light: #003296;
+$color-secondary: #e79e00;
+
+$color-black: #000;
+$color-white: #fff;
+$color-grey-dark: #232323;
+
+@mixin mq($size) {
+	@media only screen and (max-width: $size) {
+		@content;
+	}
+}

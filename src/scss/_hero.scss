@@ -1,3 +1,5 @@
+@import "variables";
+
 /* Hero */
 .hero {
 	display: flex;
@@ -62,15 +64,8 @@
 
 		&:hover {
 			border-bottom: 5px solid #ebebeb;
-			color: #ffffff;
+			color: $color-white;
 			transition: 0.5s;
 		}
 	}
-}
-
-/* Section */
-.heading {
-	font-size: 5rem;
-	text-align: center;
-	text-transform: uppercase;
 }

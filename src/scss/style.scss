@@ -11,17 +11,16 @@ body {
 	padding: 0;
 }
 
-@mixin mq($size) {
-	@media only screen and (max-width: $size) {
-		@content;
-	}
-}
-
 @import "navigation", "hero", "process", "about", "contact", "about", "social",
-	"footer", "skillsReel", "portfolioReel";
+	"footer", "skillsReel", "portfolioReel", "variables";
 
 // utility classes
+
 .heading {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 3.5rem;
+
 	@include mq(1225px) {
 		font-size: 3rem;
 	}
@@ -35,5 +34,5 @@ body {
 }
 
 .color-white {
-	color: #ffffff;
+	color: $color-white;
 }

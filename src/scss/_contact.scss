@@ -1,11 +1,13 @@
+@import "variables";
+
 /* Section Contact */
 .contact {
-	background-color: #00154e;
+	background-color: $color-primary;
 	padding: 2rem 15% 6rem 15%;
 }
 
 .contact .heading {
-	color: #ffffff;
+	color: $color-white;
 }
 
 .form {
@@ -17,7 +19,7 @@
 
 .form__input {
 	width: 48%;
-	color: #ffffff;
+	color: $color-white;
 	background: transparent;
 	border: none;
 	border-bottom: 1px solid #ebebeb;
@@ -52,7 +54,7 @@
 
 .form__button {
 	width: 100%;
-	color: #00154e;
+	color: $color-primary;
 	background-color: #f3740c;
 	border: none;
 	border-radius: 0.5rem;

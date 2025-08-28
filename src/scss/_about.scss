@@ -1,3 +1,5 @@
+@import "variables";
+
 // /* Section About */
 .about {
 	display: flex;
@@ -61,7 +63,7 @@
 
 .about .heading {
 	width: 100%;
-	color: #00154e;
+	color: $color-primary;
 }
 
 .contact-button {
@@ -70,7 +72,7 @@
 	border-radius: 5px;
 	background-color: #e79e00;
 	font-weight: bold;
-	color: white;
+	color: $color-white;
 	transition: 0.5s ease-in;
 
 	&:hover {

@@ -1,3 +1,5 @@
+@import "variables";
+
 /* Section Social */
 .social {
 	background-color: #232323;
@@ -31,7 +33,7 @@
 }
 
 .social__link svg path {
-	fill: #ffffff;
+	fill: $color-white;
 }
 
 .social__link:hover svg path {
