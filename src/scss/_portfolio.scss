@@ -1,21 +1,13 @@
 /* Section Portfolio */
 .portfolio {
-	background-color: #00154e;
+	background-color: $color-primary;
 	padding: 2rem 15% 6rem 15%;
 
 	.heading {
-		color: #ffffff;
+		color: $color-white;
 		padding: 0.5em 0;
-		@include mq(1225px) {
-			font-size: 3rem;
-		}
-		@include mq(1025px) {
-			font-size: 2.5rem;
-		}
-		@include mq(768px) {
-			font-size: 2rem;
-		}
 	}
+
 	.grid-container {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;

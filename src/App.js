@@ -10,7 +10,7 @@ import { ReactComponent as InstagramSVG } from "./img/instagram.svg";
 
 // importing separate sections for Rendering
 import Navigation from "./Components/Navigation";
-import Header from "./Components/Header";
+import Hero from "./Components/Hero";
 import Footer from "./Components/Footer";
 import ProcessSection from "./Components/ProcessSection";
 import SkillsSection from "./Components/SkillsSection";
@@ -30,7 +30,7 @@ function App() {
 		<div className="portfolio-app">
 			<Navigation />
 
-			<Header />
+			<Hero />
 
 			<ProcessSection />
 

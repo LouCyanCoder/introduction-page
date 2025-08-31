@@ -1,20 +1,13 @@
+@import "variables";
+
 /* Section Contact */
 .contact {
-	background-color: #00154e;
+	background-color: $color-primary;
 	padding: 2rem 15% 6rem 15%;
 }
 
 .contact .heading {
-	color: #ffffff;
-	@include mq(1225px) {
-		font-size: 3rem;
-	}
-	@include mq(1025px) {
-		font-size: 2.5rem;
-	}
-	@include mq(768px) {
-		font-size: 2rem;
-	}
+	color: $color-white;
 }
 
 .form {
@@ -26,24 +19,28 @@
 
 .form__input {
 	width: 48%;
-	color: #ffffff;
+	color: $color-white;
 	background: transparent;
 	border: none;
-	border-bottom: 1px solid #ebebeb;
+	border-bottom: 1px solid $color-grey-light;
 	outline: none;
 	font-size: 1.5rem;
 	margin-bottom: 2rem;
 	padding-top: 0.5rem;
 	padding-bottom: 0.5rem;
+
+	@include mq(768px) {
+		width: 100%;
+	}
 }
 
 .form__input::placeholder {
-	color: #ebebeb;
+	color: $color-grey-light;
 }
 
 .form__label {
 	width: 100%;
-	color: #ebebeb;
+	color: $color-grey-light;
 	font-size: 1.5rem;
 	margin-bottom: 0.5rem;
 }
@@ -61,7 +58,7 @@
 
 .form__button {
 	width: 100%;
-	color: #00154e;
+	color: $color-primary;
 	background-color: #f3740c;
 	border: none;
 	border-radius: 0.5rem;

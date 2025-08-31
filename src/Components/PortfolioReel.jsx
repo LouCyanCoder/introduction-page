@@ -1,12 +1,11 @@
 import React, { useEffect } from "react";
-import laraGigsView from "../img/projects/laravel-jobs.png";
-import hipsterCoffeeView from "../img/projects/generic-hipster-coffee.png";
-import whoCaresView from "../img/projects/who-cares.png";
+import laraGigsView from "../img/projects/laravel-jobs.jpg";
+import hipsterCoffeeView from "../img/projects/generic-hipster-coffee.jpg";
+import whoCaresView from "../img/projects/who-cares.jpg";
 
 const PortfolioReel = () => {
 	useEffect(() => {
 		const panels = document.querySelectorAll(".panel");
-		console.log(panels);
 
 		panels.forEach((panel) => {
 			panel.addEventListener("click", () => {
@@ -25,7 +24,9 @@ const PortfolioReel = () => {
 
 	return (
 		<section className="portfolio" id="portfolio">
-			<h2 className="heading">My portfolio</h2>
+			<h2 className="heading">
+				Some fun projects <br /> i did
+			</h2>
 			<div className="portfolio-container">
 				<article
 					className="panel active"
@@ -48,16 +49,18 @@ const PortfolioReel = () => {
 								href="https://whocares.codeboot.cz/"
 								className="button-site"
 								target="_blank"
+								rel="noreferrer"
 							>
-								<i class="fa-solid fa-window-restore mx-1"></i>
+								<i className="fa-solid fa-window-restore mx-1"></i>
 								Visit site
 							</a>
 							<a
 								href="https://github.com/LouCyanCoder/laravel-final-project"
 								className="button-github"
 								target="_blank"
+								rel="noreferrer"
 							>
-								<i class="fa-brands fa-github mx-1"></i>
+								<i className="fa-brands fa-github mx-1"></i>
 								Github
 							</a>
 						</div>
@@ -84,16 +87,18 @@ const PortfolioReel = () => {
 								href="https://loucyancoder.github.io/hipster-coffee-deployment/"
 								className="button-site"
 								target="_blank"
+								rel="noreferrer"
 							>
-								<i class="fa-solid fa-window-restore mx-1"></i>
+								<i className="fa-solid fa-window-restore mx-1"></i>
 								Visit site
 							</a>
 							<a
 								href="https://github.com/LouCyanCoder/generic-hipster-coffee"
 								className="button-github"
 								target="_blank"
+								rel="noreferrer"
 							>
-								<i class="fa-brands fa-github mx-1"></i>
+								<i className="fa-brands fa-github mx-1"></i>
 								Github
 							</a>
 						</div>
@@ -121,16 +126,18 @@ const PortfolioReel = () => {
 								href="https://laravel-jobs.herokuapp.com/"
 								className="button-site"
 								target="_blank"
+								rel="noreferrer"
 							>
-								<i class="fa-solid fa-window-restore mx-1"></i>
+								<i className="fa-solid fa-window-restore mx-1"></i>
 								Visit site
 							</a>
 							<a
 								href="https://github.com/LouCyanCoder/Laravel-jobs"
 								className="button-github"
 								target="_blank"
+								rel="noreferrer"
 							>
-								<i class="fa-brands fa-github mx-1"></i>
+								<i className="fa-brands fa-github mx-1"></i>
 								Github
 							</a>
 						</div>

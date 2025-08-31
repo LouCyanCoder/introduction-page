@@ -1,5 +1,7 @@
-/* Header */
-.header {
+@import "variables";
+
+/* Hero */
+.hero {
 	display: flex;
 	flex-direction: column;
 	// justify-content: center;
@@ -7,8 +9,8 @@
 	height: 100vh;
 	color: #e8e8e8;
 	background-image: url("../img/wallpaper-desktop.png");
+	background-size: cover;
 	background-color: #333232;
-	background-size: contain;
 	background-position: center 4em;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -56,37 +58,14 @@
 	}
 
 	&__link {
-		color: #f3740c;
+		color: $color-secondary;
 		font-weight: bold;
 		text-decoration: none;
 
 		&:hover {
-			border-bottom: 5px solid #ebebeb;
-			color: #ffffff;
+			border-bottom: 5px solid $color-grey-light;
+			color: $color-white;
 			transition: 0.5s;
 		}
 	}
 }
-
-/* Section */
-.heading {
-	font-size: 5rem;
-	text-align: center;
-	text-transform: uppercase;
-}
-
-// .button {
-// 	color: #ffffff;
-// 	background-color: #f3740c#00154e;
-// 	border-radius: 0.5rem;
-// 	box-shadow: 2px 2px 8px 0px rgba(68, 68, 68, 0.5);
-// 	font-size: 1.25rem;
-// 	text-align: center;
-// 	text-decoration: none;
-// 	margin: 0 auto;
-// 	padding: 0.5rem 3rem;
-
-// 	&:hover {
-// 		box-shadow: 2px 2px 8px 0px rgba(68, 68, 68, 0.75);
-// 	}
-// }

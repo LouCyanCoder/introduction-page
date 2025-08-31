@@ -1,3 +1,5 @@
+@import "variables";
+
 /* Section Skills */
 .skills {
 	padding: 4rem 15% 4rem 15%;
@@ -7,7 +9,7 @@
 }
 
 .skills .heading {
-	color: #00154e;
+	color: $color-primary;
 	@include mq(1225px) {
 		font-size: 3rem;
 	}
@@ -42,7 +44,7 @@
 
 	&__label {
 		width: 100%;
-		color: #ffffff;
+		color: $color-white;
 		background-color: #232323;
 		text-align: center;
 		font-size: 1.5em;

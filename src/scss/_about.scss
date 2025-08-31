@@ -1,3 +1,5 @@
+@import "variables";
+
 // /* Section About */
 .about {
 	display: flex;
@@ -6,6 +8,7 @@
 	align-items: center;
 	background-color: #ebebeb;
 	padding: 2rem 15% 6rem 15%;
+
 	@include mq(1225px) {
 		justify-content: center;
 	}
@@ -61,25 +64,16 @@
 
 .about .heading {
 	width: 100%;
-	color: #00154e;
-	@include mq(1225px) {
-		font-size: 3rem;
-	}
-	@include mq(1025px) {
-		font-size: 2.5rem;
-	}
-	@include mq(768px) {
-		font-size: 2rem;
-	}
+	color: $color-primary;
 }
 
 .contact-button {
 	margin: 10px;
 	padding: 10px 30px;
 	border-radius: 5px;
-	background-color: #e79e00;
+	background-color: $color-secondary;
 	font-weight: bold;
-	color: white;
+	color: $color-white;
 	transition: 0.5s ease-in;
 
 	&:hover {

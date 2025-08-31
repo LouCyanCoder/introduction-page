@@ -1,9 +1,12 @@
+@import "variables";
+
 /* Section Social */
 .social {
 	background-color: #232323;
 	padding: 2rem 15% 6rem 15%;
 	display: flex;
 	flex-direction: column;
+
 	&__container {
 		display: flex;
 		justify-content: center;
@@ -30,16 +33,11 @@
 }
 
 .social__link svg path {
-	fill: #ffffff;
+	fill: $color-white;
 }
 
 .social__link:hover svg path {
 	opacity: 0.75;
 
 	transition: 0.5s;
-}
-
-.social .heading {
-	color: #ffffff;
-	font-size: 2.5rem;
 }

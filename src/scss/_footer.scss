@@ -1,6 +1,8 @@
+@import "variables";
+
 /* Footer */
 .footer {
-	background-color: #ebebeb;
+	background-color: $color-grey-light;
 	padding: 3rem 15%;
 }
 
@@ -11,21 +13,12 @@
 	color: #232323;
 	font-size: 3.5rem;
 	font-weight: 800;
-	@include mq(1225px) {
-		font-size: 3rem;
-	}
-	@include mq(1025px) {
-		font-size: 2.5rem;
-	}
-	@include mq(768px) {
-		font-size: 2rem;
-	}
 }
 
 .footer__line {
 	width: 20%;
 	height: 0.4rem;
-	background-color: #5dccff;
+	background-color: $color-primary-light;
 }
 
 .footer .social__link {

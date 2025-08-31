@@ -7,21 +7,15 @@
 	padding: 1.5rem 0;
 
 	.heading {
-		color: #00154e;
+		color: $color-primary;
 		margin-bottom: 1em;
 		@include mq(1225px) {
-			font-size: 3rem;
-
 			margin: 2.5rem auto;
 		}
 		@include mq(1025px) {
-			font-size: 2.5rem;
-
 			margin: 1rem auto;
 		}
 		@include mq(768px) {
-			font-size: 2rem;
-
 			margin: 0.5rem auto;
 		}
 	}
@@ -62,7 +56,7 @@
 		transition: 250ms;
 
 		&:hover {
-			color: #00154e;
+			color: $color-primary;
 			transform: scale(1.5);
 			transition: transform 250ms;
 		}
