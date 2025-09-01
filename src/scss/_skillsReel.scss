@@ -1,0 +1,74 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+.SkillsReel {
+	width: 80%;
+	margin: 3rem auto;
+	padding: 1.5rem 0;
+
+	.heading {
+		color: $color-primary;
+		margin-bottom: 1em;
+		@include mq(1225px) {
+			margin: 2.5rem auto;
+		}
+		@include mq(1025px) {
+			margin: 1rem auto;
+		}
+		@include mq(768px) {
+			margin: 0.5rem auto;
+		}
+	}
+}
+
+.slide {
+	transform: scale(0.35);
+	transition: 2000ms;
+	opacity: 0.2;
+
+	img {
+		width: auto;
+		height: 13rem;
+		margin: auto;
+		@include mq(1225px) {
+			height: 10rem;
+		}
+		@include mq(1025px) {
+			height: 8rem;
+		}
+		@include mq(768px) {
+			height: 3rem;
+		}
+	}
+}
+
+.activeSlide {
+	transform: scale(1);
+	opacity: 1;
+}
+
+.arrow {
+	position: absolute;
+	cursor: pointer;
+	z-index: 10;
+
+	svg {
+		transition: 250ms;
+
+		&:hover {
+			color: $color-primary;
+			transform: scale(1.5);
+			transition: transform 250ms;
+		}
+	}
+}
+
+.next {
+	right: 0%;
+	top: 50%;
+}
+
+.prev {
+	left: 0%;
+	top: 50%;
+}

@@ -1,0 +1,38 @@
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	color: #444444;
+	font-family: "Rubik", sans-serif;
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+}
+
+@import "navigation", "hero", "process", "about", "contact", "about", "social",
+	"footer", "skillsReel", "portfolioReel", "variables";
+
+// utility classes
+
+.heading {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 3.5rem;
+
+	@include mq(1225px) {
+		font-size: 3rem;
+	}
+
+	@include mq(1025px) {
+		font-size: 2.5rem;
+	}
+	@include mq(768px) {
+		font-size: 2rem;
+	}
+}
+
+.color-white {
+	color: $color-white;
+}

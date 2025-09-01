@@ -1,0 +1,84 @@
+@import "variables";
+
+/* Section Skills */
+.skills {
+	padding: 4rem 15% 4rem 15%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.skills .heading {
+	color: $color-primary;
+	@include mq(1225px) {
+		font-size: 3rem;
+	}
+	@include mq(1025px) {
+		font-size: 2.5rem;
+	}
+	@include mq(768px) {
+		font-size: 2rem;
+	}
+}
+
+.skill {
+	&__container {
+		display: grid;
+		width: 100%;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 10px;
+		@include mq(1225px) {
+			grid-template-columns: 1fr 1fr;
+		}
+		@include mq(768px) {
+			grid-template-columns: 1fr;
+		}
+	}
+	&__item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		font-size: 1.75rem;
+	}
+
+	&__label {
+		width: 100%;
+		color: $color-white;
+		background-color: #232323;
+		text-align: center;
+		font-size: 1.5em;
+		padding: 0.65rem;
+		@include mq(1225px) {
+			font-size: 3rem;
+		}
+		@include mq(1025px) {
+			font-size: 2.5rem;
+		}
+		@include mq(768px) {
+			font-size: 2rem;
+		}
+	}
+
+	&__logo {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		max-height: 100%;
+		max-width: 100%;
+		height: 200px;
+
+		img {
+			width: auto;
+			height: auto;
+			transition: 0.5s;
+			max-height: 80%;
+			max-width: 100%;
+
+			&:hover {
+				transform: scale(1.1) rotate(-5deg);
+				transition: 0.5s;
+			}
+		}
+	}
+}

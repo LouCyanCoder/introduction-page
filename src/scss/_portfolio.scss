@@ -1,0 +1,29 @@
+/* Section Portfolio */
+.portfolio {
+	background-color: $color-primary;
+	padding: 2rem 15% 6rem 15%;
+
+	.heading {
+		color: $color-white;
+		padding: 0.5em 0;
+	}
+
+	.grid-container {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 2em;
+
+		@include mq(1225px) {
+			grid-template-columns: 1fr 1fr;
+		}
+		@include mq(768px) {
+			grid-template-columns: 1fr;
+		}
+
+		.card {
+			img {
+				padding: 10px;
+			}
+		}
+	}
+}

@@ -1,0 +1,43 @@
+@import "variables";
+
+/* Section Social */
+.social {
+	background-color: #232323;
+	padding: 2rem 15% 6rem 15%;
+	display: flex;
+	flex-direction: column;
+
+	&__container {
+		display: flex;
+		justify-content: center;
+		margin-top: 4rem;
+		margin-bottom: 1rem;
+		@include mq(768px) {
+			flex-direction: column;
+			align-items: space-between;
+			margin-top: 3rem;
+			margin-bottom: 0.5rem;
+		}
+	}
+
+	&__link {
+		margin: 0 6rem;
+	}
+}
+
+.social__link svg {
+	display: block;
+	width: 4rem;
+	height: 4rem;
+	margin: 1em auto;
+}
+
+.social__link svg path {
+	fill: $color-white;
+}
+
+.social__link:hover svg path {
+	opacity: 0.75;
+
+	transition: 0.5s;
+}
