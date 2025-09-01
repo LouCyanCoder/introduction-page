@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/introduction-page/static/css/main.75ca93c7.css",
+    "main.js": "/introduction-page/static/js/main.09f5383f.js",
+    "static/js/787.37626faa.chunk.js": "/introduction-page/static/js/787.37626faa.chunk.js",
+    "static/media/wallpaper-desktop.png": "/introduction-page/static/media/wallpaper-desktop.9ec47b6500540d788145.png",
+    "static/media/profile-photo.jpg": "/introduction-page/static/media/profile-photo.4724538dee0f27d13c52.jpg",
+    "static/media/who-cares.jpg": "/introduction-page/static/media/who-cares.02f9026ef8102120d011.jpg",
+    "static/media/PHP_logo.png": "/introduction-page/static/media/PHP_logo.00baeb442607d6f50cfe.png",
+    "static/media/laravel-jobs.jpg": "/introduction-page/static/media/laravel-jobs.6d5887e167b884c902ca.jpg",
+    "static/media/generic-hipster-coffee.jpg": "/introduction-page/static/media/generic-hipster-coffee.5e26e0997a9076503f1b.jpg",
+    "static/media/React_logo.png": "/introduction-page/static/media/React_logo.702a26a65699561606d2.png",
+    "static/media/Sass_logo.png": "/introduction-page/static/media/Sass_logo.757cf58ca7d93bf92d1e.png",
+    "static/media/Laravel_logo.png": "/introduction-page/static/media/Laravel_logo.8b2939ca7ad8851c40a2.png",
+    "static/media/HTML5_logo.png": "/introduction-page/static/media/HTML5_logo.69c3a72be6bfae9740b0.png",
+    "static/media/CSS3_logo.png": "/introduction-page/static/media/CSS3_logo.4c860946ab25195a10e4.png",
+    "static/media/Mysql_logo.png": "/introduction-page/static/media/Mysql_logo.a04abbf76b39676bc4d9.png",
+    "static/media/github.svg": "/introduction-page/static/media/github.d1bb13ce1a593d82e4c0d821dc7f1b41.svg",
+    "static/media/instagram.svg": "/introduction-page/static/media/instagram.482d4132535cae9555c2e61f6a121eba.svg",
+    "static/media/slick.svg": "/introduction-page/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/introduction-page/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/introduction-page/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "index.html": "/introduction-page/index.html",
+    "static/media/slick.woff": "/introduction-page/static/media/slick.295183786cd8a1389865.woff",
+    "static/media/linkedin.svg": "/introduction-page/static/media/linkedin.7cc49b82cdb910eb71d1b22f8ef52b02.svg",
+    "main.75ca93c7.css.map": "/introduction-page/static/css/main.75ca93c7.css.map",
+    "main.09f5383f.js.map": "/introduction-page/static/js/main.09f5383f.js.map",
+    "787.37626faa.chunk.js.map": "/introduction-page/static/js/787.37626faa.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.75ca93c7.css",
+    "static/js/main.09f5383f.js"
+  ]
+}
