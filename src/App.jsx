@@ -30,11 +30,14 @@ function App() {
 		<div className="portfolio-app">
 			<Navigation />
 
-			<Hero />
-
-			<ProcessSection />
+			<Hero
+				title="DEV for hire"
+				promo="This is a simple React webpage that i use for testing and introduce myself."
+			/>
 
 			<AboutSection />
+
+			<ProcessSection />
 
 			<SkillsReel />
 

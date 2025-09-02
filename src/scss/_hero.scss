@@ -1,71 +1,127 @@
 @import "variables";
 
-/* Hero */
 .hero {
+	padding: ($gap * 3) ($gap);
+	background-color: $color-white;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	color: $color-secondary;
+	transition: background $transition, opacity $transition;
 	display: flex;
 	flex-direction: column;
-	// justify-content: center;
 	align-items: center;
-	height: 100vh;
-	color: #e8e8e8;
-	background-image: url("../img/wallpaper-desktop.png");
-	background-size: cover;
-	background-color: #333232;
-	background-position: center 4em;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	box-shadow: inset 0 0 40em 4em #000;
-	text-align: center;
-	margin-top: 4rem;
-	font-family: "Share Tech Mono", monospace;
-	z-index: 1;
+	justify-content: center;
+	min-height: 40rem;
+	position: relative;
+	overflow: hidden;
 
-	@include mq(1225px) {
-		height: 80vh;
-		box-shadow: inset 0 0 30em 3em #000;
-	}
-	@include mq(1025px) {
-		height: 60vh;
-		box-shadow: inset 0 0 20em 2em #000;
-	}
 	@include mq(768px) {
-		height: 45vh;
-		box-shadow: inset 0 0 10em 1em #000;
+		justify-content: flex-start;
+		min-height: 35rem;
 	}
 
-	&__title {
-		font-size: 3rem;
-		font-weight: normal;
-		margin: 3em 0 1em 0;
-		z-index: 0;
-		@include mq(1225px) {
-			font-size: 2.7rem;
-			margin: 3em 0 0.7em 0;
-		}
-		@include mq(1025px) {
-			font-size: 2.3rem;
-			margin: 2.7em 0 0.5em 0;
-		}
-		@include mq(768px) {
-			font-size: 2rem;
-			margin: 2em 0 0.3em 0;
-		}
+	&:after {
+		content: "";
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: rgba($color-black, 0.3);
+		background-image: url("../img/hero/doodles.webp");
+		background-size: cover;
+		background-position: center;
+		opacity: 0.5;
+		animation: heroBgPulse 15s infinite ease-in-out;
+	}
+}
+
+.hero__img {
+	position: absolute;
+	max-height: 90%;
+	height: 100%;
+	width: auto;
+	bottom: 0;
+	right: 20%;
+	z-index: 2;
+	object-fit: contain;
+	object-position: bottom right;
+
+	@include mq(768px) {
+		width: 80%;
+		right: 10%;
+		max-height: 20rem;
+	}
+}
+
+.hero__wrap {
+	z-index: 10;
+	text-align: center;
+}
+
+.hero__title {
+	text-align: left;
+	font-size: 3.5rem;
+
+	@include mq(768px) {
+		font-size: 2rem;
+	}
+}
+
+.hero__promo {
+	text-align: left;
+	margin-top: ($gap * 2);
+
+	font-size: 1.2rem;
+
+	&:last-child {
+		margin-bottom: 0;
 	}
 
-	&__desc {
-		font-weight: normal;
-		margin-top: 0;
+	@include mq(768px) {
+		font-size: 1rem;
+	}
+}
+
+.hero__info {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	text-align: center;
+
+	div {
+		padding-left: ($gap);
+		padding-right: ($gap);
+		margin-top: ($gap);
+	}
+}
+
+#js-hero-content {
+	animation: fadeInHero 2s;
+	z-index: 5;
+	position: relative;
+	margin-top: $gap * 2;
+	text-shadow: $color-black 2px 2px 1px;
+}
+
+@keyframes fadeInHero {
+	0% {
+		opacity: 0;
 	}
 
-	&__link {
-		color: $color-secondary;
-		font-weight: bold;
-		text-decoration: none;
+	100% {
+		opacity: 1;
+	}
+}
 
-		&:hover {
-			border-bottom: 5px solid $color-grey-light;
-			color: $color-white;
-			transition: 0.5s;
-		}
+@keyframes heroBgPulse {
+	0%,
+	100% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.2);
 	}
 }
