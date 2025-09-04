@@ -14,27 +14,14 @@ const AboutSection = () => {
 			/>
 			<div className="about__desc" data-aos="fade-left">
 				<p>
-					<strong>My name is Lucian Nguyen. </strong> I am an aspiring junior
-					web developer and enjoy learning new trends.{" "}
-					<strong>I have a background in graphic design and IT support.</strong>
-				</p>
-
-				<p>
-					I am open to learning new technologies and enjoy working with people
-					<span className="about__underline">
-						{" "}
-						who are as passionate about all web-related as me
-					</span>
-					.
-				</p>
-				<p>
-					My main interests are ReactJS and Laravel frameworks. Also discovering
-					smaller frameworks like Tailwind CSS or AlpineJS
-				</p>
-				<p>
-					I like animals, gaming, fitness and martial arts. If I do not develop,
-					you can also find me dabbling in music with my crew in České
-					Budějovice.
+					My name is <strong>Lucian Nguyen.</strong>
+					Frontend developer with a background in IT and graphic design I’ve
+					spent the past three years working at Alma Career, building and
+					improving digital products, and before that I spent several years in
+					IT and design. I’m now looking for new opportunities where I can focus
+					on frontend development and continue growing toward fullstack. I enjoy
+					creating clean, responsive interfaces that make the web easier and
+					more enjoyable to use.
 				</p>
 				<h4 className="about__cta">
 					Get in touch and let's do something great together.

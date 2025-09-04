@@ -10,6 +10,24 @@ $color-white: #fff;
 $color-grey-dark: #232323;
 $color-grey-light: #ebebeb;
 
+/* --- Breakpoints --- */
+// Example: @media (min-width: $bp-sm) {}
+$bp-xs: 480px;
+$bp-sm: 576px;
+$bp-md: 768px;
+$bp-lg: 992px;
+$bp-xl: 1200px;
+$bp-xxl: 1500px;
+$bp-uw: 1920px;
+
+$bp-xs-max: $bp-xs - 1;
+$bp-sm-max: $bp-sm - 1;
+$bp-md-max: $bp-md - 1;
+$bp-lg-max: $bp-lg - 1;
+$bp-xl-max: $bp-xl - 1;
+$bp-xxl-max: $bp-xxl - 1;
+$bp-uw-max: $bp-uw - 1;
+
 @mixin mq($size) {
 	@media only screen and (max-width: $size) {
 		@content;
