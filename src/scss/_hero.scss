@@ -63,25 +63,17 @@
 .hero__title {
 	text-align: left;
 	font-size: 3.5rem;
-
-	@include mq(768px) {
-		font-size: 2rem;
-	}
 }
 
 .hero__promo {
 	text-align: left;
 	margin-top: ($gap * 2);
 	color: $color-secondary;
-	font-size: 1.3rem;
+	font-size: 1.6rem;
 	text-shadow: $color-black 2px 2px 1px;
 
 	&:last-child {
 		margin-bottom: 0;
-	}
-
-	@include mq(768px) {
-		font-size: 1.2rem;
 	}
 }
 

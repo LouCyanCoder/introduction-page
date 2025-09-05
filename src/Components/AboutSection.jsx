@@ -6,15 +6,10 @@ const AboutSection = () => {
 			<h2 className="heading" data-aos="fade-up">
 				About me
 			</h2>
-			<img
-				src={require("../img/profile-photo.jpg")}
-				alt="about-image"
-				className="about__img"
-				data-aos="fade-right"
-			/>
+
 			<div className="about__desc" data-aos="fade-left">
 				<p>
-					My name is <strong>Lucian Nguyen.</strong>
+					My name is <strong>Lucian Nguyen. </strong>
 					Frontend developer with a background in IT and graphic design I’ve
 					spent the past three years working at Alma Career, building and
 					improving digital products, and before that I spent several years in

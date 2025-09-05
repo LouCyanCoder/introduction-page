@@ -6,7 +6,7 @@ $timeline-title-color: $color-black;
 $timeline-text-size: 1.6rem;
 $timeline-text-color: $color-black;
 $timeline-year-size: 2.6rem;
-$timeline-year-line-height: 1.8;
+$timeline-year-line-height: 1.5;
 $timeline-year-color: $color-black;
 $timeline-point-size: 2rem;
 $timeline-point-color: $color-secondary;
@@ -156,7 +156,7 @@ $timeline-year-vertical-spacing: (
 	.timeline__grid--first {
 		@media (min-width: $bp-lg) {
 			padding-right: ($gap);
-			flex-direction: row-reverse;
+			flex-direction: column;
 		}
 	}
 
@@ -180,7 +180,8 @@ $timeline-year-vertical-spacing: (
 		order: 2;
 		width: calc(50% - $gap);
 		min-width: calc(50% - $gap);
-		flex-direction: row;
+		flex-direction: column;
+		flex: 1;
 	}
 }
 

@@ -42,6 +42,7 @@
 		align-items: center;
 		width: 50%;
 		font-size: 1.25rem;
+		margin: auto;
 		@include mq(1225px) {
 			width: 90%;
 			font-size: 1.15rem;

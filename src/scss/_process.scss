@@ -3,18 +3,11 @@
 /* Section Process */
 .process {
 	background-color: #ebebeb;
-	padding-top: 5rem;
+	padding-top: 4.5rem;
 
 	&__quote {
-		font-size: 1.75rem;
 		text-align: center;
-		margin: 0rem 2rem 5rem 2rem;
-		@include mq(1225px) {
-			font-size: 1.5rem;
-		}
-		@include mq(1025px) {
-			font-size: 1.3rem;
-		}
+		margin: 0rem 2rem 10rem 2rem;
 	}
 
 	&__container {
@@ -68,11 +61,6 @@
 			height: 6rem;
 			top: -8rem;
 		}
-		@include mq(1025px) {
-			width: 5rem;
-			height: 5rem;
-			top: -6rem;
-		}
 
 		i {
 			font-size: 2.5em;
@@ -84,9 +72,6 @@
 		color: #f3740c;
 		font-size: 1.75rem;
 		font-weight: 800;
-		@include mq(1225px) {
-			font-size: 1.2rem;
-		}
 	}
 }
 

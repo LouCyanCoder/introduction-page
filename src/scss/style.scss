@@ -5,7 +5,7 @@
 html,
 body {
 	color: #444444;
-	font-family: "Rubik", sans-serif;
+	font-family: "Rubik", Arial, Helvetica, sans-serif;
 	font-size: 10px;
 	margin: 0;
 	padding: 0;
@@ -26,6 +26,7 @@ body {
 	text-align: center;
 	text-transform: uppercase;
 	font-size: 3.5rem;
+	margin-bottom: $gap * 2;
 
 	@include mq(1225px) {
 		font-size: 3rem;
