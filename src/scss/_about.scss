@@ -7,7 +7,7 @@
 	justify-content: space-between;
 	align-items: center;
 	background-color: #ebebeb;
-	padding: 2rem 15% 6rem 15%;
+	padding: $gap;
 
 	@include mq(1225px) {
 		justify-content: center;
@@ -22,14 +22,17 @@
 		border-radius: 50%;
 		object-fit: cover;
 		margin: 20px;
+
 		@include mq(1225px) {
 			width: 20rem;
 			height: 20rem;
 		}
+
 		@include mq(1025px) {
 			width: 16rem;
 			height: 16rem;
 		}
+
 		@include mq(768px) {
 			width: 12rem;
 			height: 12rem;
@@ -40,16 +43,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		width: 50%;
-		font-size: 1.25rem;
 		margin: auto;
-		@include mq(1225px) {
-			width: 90%;
-			font-size: 1.15rem;
-		}
-		@include mq(1025px) {
-			font-size: 1rem;
-		}
 	}
 
 	&__underline {

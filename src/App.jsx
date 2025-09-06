@@ -4,9 +4,10 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 // SVGs imported into the components
-import { ReactComponent as GitHubSVG } from "./img/github.svg";
-import { ReactComponent as LinkedinSVG } from "./img/linkedin.svg";
-import { ReactComponent as InstagramSVG } from "./img/instagram.svg";
+import jpPrintImage from "./img/timeline/jpprint.webp";
+import parkerImage from "./img/timeline/parker.webp";
+import almaImage from "./img/timeline/alma.webp";
+import devImage from "./img/timeline/timelineDev.webp";
 
 // importing separate sections for Rendering
 import Navigation from "./Components/Navigation";
@@ -30,24 +31,20 @@ const timelineData = {
 		{
 			blocks: [
 				{
-					year: "-2018",
+					year: "until 2018",
 					title: "Graphic Design & Signmaking",
 					text: "Led the Signmaking & Graphic Design Department at J&P Print. Created branding, logotypes, and web wireframes for entrepreneurs and agencies, while also managing IT infrastructure and training new employees.",
 					classes: "",
 				},
 				{
-					title: "Přelet přes alpy v autě.",
-					text: "Tesly by mohly mít větší kufr.",
-					classes: "",
+					image: jpPrintImage,
 				},
 			],
 		},
 		{
 			blocks: [
 				{
-					title: "Výstavba servisních míst Tesla okolo měsíce",
-					text: "Čekací doba na převaděč spojitosti je nekonečná.",
-					classes: "",
+					image: parkerImage,
 				},
 				{
 					year: "2018-2021",
@@ -66,22 +63,18 @@ const timelineData = {
 					classes: "",
 				},
 				{
-					title: "Výstavba servisních míst Tesla okolo měsíce",
-					text: "Čekací doba na převaděč spojitosti je nekonečná.",
-					classes: "",
+					image: almaImage,
 				},
 			],
 		},
 		{
 			blocks: [
 				{
-					title: "Výstavba servisních míst Tesla okolo měsíce",
-					text: "Čekací doba na převaděč spojitosti je nekonečná.",
-					classes: "",
+					image: devImage,
 				},
 				{
-					year: "2025-?",
-					title: "Your Project",
+					year: "2025-future",
+					title: "Your Company",
 					text: "Bringing my combined experience in design, IT, and development to new challenges. The next step could be working with your company on exciting projects.",
 					classes: "",
 				},
@@ -121,7 +114,7 @@ function App() {
 
 			<PortfolioReel />
 
-			<ContactForm />
+			{/* <ContactForm /> */}
 
 			<Footer />
 		</div>

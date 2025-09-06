@@ -172,7 +172,7 @@ $timeline-year-vertical-spacing: (
 	display: flex;
 	flex-direction: column;
 	order: 2;
-	padding: ($gap) ($gap);
+	padding: ($gap) ($gap) ($gap) ($gap * 3 );
 	width: calc(100% - ($gap * 2));
 
 	@media (min-width: $bp-lg) {
@@ -182,6 +182,7 @@ $timeline-year-vertical-spacing: (
 		min-width: calc(50% - $gap);
 		flex-direction: column;
 		flex: 1;
+		padding: ($gap) ($gap);
 	}
 }
 
@@ -311,8 +312,9 @@ $timeline-year-vertical-spacing: (
 	min-height: 16rem;
 	max-width: 40rem;
 	border: 1rem solid fade($color-black, 40%);
-	background-size: cover;
+	background-size: contain;
 	background-position: center;
+	background-repeat: no-repeat;
 }
 
 .timeline__grid--image {
