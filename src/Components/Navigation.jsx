@@ -22,11 +22,6 @@ const Navigation = () => {
 			icon: "fa-images",
 			label: "Projects",
 		},
-		{
-			href: "#contact",
-			icon: "fa-paper-plane",
-			label: "Contact",
-		},
 	];
 
 	const handleHomeClick = (e) => {

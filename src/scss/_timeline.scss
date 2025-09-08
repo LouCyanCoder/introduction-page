@@ -55,7 +55,7 @@ $timeline-year-vertical-spacing: (
 
 				&:before {
 					bottom: calc(100% - $timeline-year-vertical-spacing);
-					top: auto;
+					// top: auto;
 				}
 			}
 		}
@@ -97,7 +97,7 @@ $timeline-year-vertical-spacing: (
 		.timeline__grid--center {
 			&:before {
 				bottom: calc(100% - $timeline-year-vertical-spacing);
-				top: auto;
+				// top: auto;
 
 				@media (min-width: $bp-lg) {
 					bottom: 50%;
@@ -172,7 +172,7 @@ $timeline-year-vertical-spacing: (
 	display: flex;
 	flex-direction: column;
 	order: 2;
-	padding: ($gap) ($gap) ($gap) ($gap * 3 );
+	padding: ($gap) ($gap) ($gap) ($gap * 3);
 	width: calc(100% - ($gap * 2));
 
 	@media (min-width: $bp-lg) {

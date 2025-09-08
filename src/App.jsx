@@ -94,7 +94,7 @@ function App() {
 
 			<Hero
 				title="DEV for hire"
-				promo="This is a simple React webpage that i use for testing and introduce myself."
+				promo="Hello, I’m Lucian Nguyen, a web developer passionate about creating clean, user-friendly, and scalable digital solutions. I’d be excited to bring both technical skills and a collaborative mindset to your project."
 			/>
 
 			<AboutSection />
@@ -113,9 +113,6 @@ function App() {
 			{/* <PortfolioSection /> */}
 
 			<PortfolioReel />
-
-			{/* <ContactForm /> */}
-
 			<Footer />
 		</div>
 	);
