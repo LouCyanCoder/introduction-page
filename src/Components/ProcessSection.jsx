@@ -10,23 +10,23 @@ const ProcessSection = () => {
 	const processSteps = [
 		{
 			icon: "fa-comments",
-			title: "Discover",
-			text: "Tell me about your project and we brainstorm together the features to create a plan for your product to launch.",
+			title: "Polyglotic & Globally minded",
+			text: "Fluent in Czech and English, proficient in other languages, and quick to acquire conversational basics when needed. The bigger the cultural melting pot, the better.",
 		},
 		{
 			icon: "fa-pen-ruler",
-			title: "Design",
-			text: "We design the wireframe and agree together how to create the best experience for your users to present your brand.",
+			title: "Analytical & Adaptive",
+			text: "Skilled at breaking down complex problems and adjusting quickly to new challenges, technologies, and environments.",
 		},
 		{
-			icon: "fa-code",
-			title: "Be Ready",
-			text: "We protoype and develop your product. We work together intensely to incorporate your feedback.",
+			icon: "fa-lightbulb",
+			title: "Unique perspective",
+			text: "My ability to think differently helps me generate original solutions and adapt ideas in unexpected ways",
 		},
 		{
-			icon: "fa-cloud-arrow-up",
-			title: "Deploy",
-			text: "We deploy your product and now your website is ready to get the traction. Get out there and grow your audience.",
+			icon: "fa-hand-fist",
+			title: "Balanced Resilience",
+			text: "Easy to work with under normal circumstances, but able to bring focus, determination, and grit in high-pressure situations.",
 		},
 	];
 
@@ -42,15 +42,13 @@ const ProcessSection = () => {
 
 	return (
 		<section className="process">
-			<p className="process__quote" data-aos="fade-up">
-				Let's work together to make <strong>your product stand out</strong>. I
-				create beautiful and functional websites.
-				<br />I work with my clients step by step{" "}
-				<strong>
-					from the idea stage to the fully functioning web application
-				</strong>
-				.
-			</p>
+			<div className="container">
+				<p className="process__quote" data-aos="fade-up">
+					My path as a web developer has been guided not only by experience and
+					research, but also by talent testing and personal growth, leading me
+					to four core strengths I bring to my work.
+				</p>
+			</div>
 
 			<div className="process__container">
 				{processSteps.map((step, idx) => (

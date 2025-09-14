@@ -5,14 +5,20 @@
 html,
 body {
 	color: #444444;
-	font-family: "Rubik", sans-serif;
-	font-size: 16px;
+	font-family: "Rubik", Arial, Helvetica, sans-serif;
+	font-size: 10px;
 	margin: 0;
 	padding: 0;
+
+	p {
+		font-size: 1.6rem;
+		line-height: 1.5;
+		margin: 0 0 1.5rem 0;
+	}
 }
 
 @import "navigation", "hero", "process", "about", "contact", "about", "social",
-	"footer", "skillsReel", "portfolioReel", "variables";
+	"footer", "skillsReel", "portfolioReel", "timeline", "variables";
 
 // utility classes
 
@@ -20,6 +26,7 @@ body {
 	text-align: center;
 	text-transform: uppercase;
 	font-size: 3.5rem;
+	margin-bottom: $gap * 2;
 
 	@include mq(1225px) {
 		font-size: 3rem;
@@ -35,4 +42,8 @@ body {
 
 .color-white {
 	color: $color-white;
+}
+
+.text-uppercase {
+	text-transform: uppercase;
 }

@@ -22,11 +22,6 @@ const Navigation = () => {
 			icon: "fa-images",
 			label: "Projects",
 		},
-		{
-			href: "#contact",
-			icon: "fa-paper-plane",
-			label: "Contact",
-		},
 	];
 
 	const handleHomeClick = (e) => {
@@ -42,7 +37,7 @@ const Navigation = () => {
 			<div className="container-fluid">
 				<a className="navbar-brand" href="#header" onClick={handleHomeClick}>
 					<img
-						src={require("../img/lcd-favicon.png")}
+						src={require("../img/header-icon.png")}
 						alt="Logo"
 						className="nav__logo me-3"
 					/>
