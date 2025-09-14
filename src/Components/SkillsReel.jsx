@@ -15,16 +15,16 @@ import PHPlogo from "../img/skills/PHP_logo.png";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 
 // setting up images in an array
-const images = [
-	HTMLlogo,
-	CSSlogo,
-	JSlogo,
-	Sasslogo,
-	Laravellogo,
-	Reactlogo,
-	MySQLlogo,
-	Gitlogo,
-	PHPlogo,
+const skills = [
+	{ image: HTMLlogo, text: "HTML5" },
+	{ image: CSSlogo, text: "CSS3" },
+	{ image: JSlogo, text: "JavaScript" },
+	{ image: Sasslogo, text: "Sass" },
+	{ image: Laravellogo, text: "Laravel" },
+	{ image: Reactlogo, text: "React" },
+	{ image: MySQLlogo, text: "MySQL" },
+	{ image: Gitlogo, text: "Git" },
+	{ image: PHPlogo, text: "PHP" },
 ];
 
 // arrows for the reel
@@ -50,14 +50,14 @@ const SkillsReel = () => {
 	const settings = {
 		infinite: true,
 		lazyLoad: true,
-		slidesToShow: 3,
+		slidesToShow: 5,
 		centerMode: true,
 		centerPadding: 2,
 		nextArrow: <NextArrow />,
 		prevArrow: <PrevArrow />,
 		autoplay: false,
-		autoplaySpeed: 2500,
-		speed: 2000,
+		autoplaySpeed: 2000,
+		speed: 500,
 
 		beforeChange: (current, next) => setImageIndex(next),
 	};
@@ -66,12 +66,13 @@ const SkillsReel = () => {
 		<div className="SkillsReel" id="skillsReel">
 			<h2 className="heading">My tech stack</h2>
 			<Slider {...settings}>
-				{images.map((img, idx) => (
+				{skills.map((skill, idx) => (
 					<div
-						className={idx === imageIndex ? "slide activeSlide" : "slide"}
+						className={idx === imageIndex ? "skill slide activeSlide" : "slide"}
 						key={idx}
 					>
-						<img src={img} alt={img} />
+						<img src={skill.image} alt={skill.text} />
+						<p className="skill__label text-center">{skill.text}</p>
 					</div>
 				))}
 			</Slider>
