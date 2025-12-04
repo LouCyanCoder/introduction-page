@@ -1,13 +1,12 @@
 {
   "files": {
-    "main.css": "/introduction-page/static/css/main.e99a0b5b.css",
-    "main.js": "/introduction-page/static/js/main.1dcfa6b9.js",
+    "main.css": "/introduction-page/static/css/main.86a29483.css",
+    "main.js": "/introduction-page/static/js/main.a4fe3b98.js",
     "static/js/787.37626faa.chunk.js": "/introduction-page/static/js/787.37626faa.chunk.js",
     "static/media/who-cares.jpg": "/introduction-page/static/media/who-cares.02f9026ef8102120d011.jpg",
     "static/media/doodles.webp": "/introduction-page/static/media/doodles.21a4f4972bbf10a07d71.webp",
     "static/media/k6.jpg": "/introduction-page/static/media/k6.2451583ba3acef152c16.jpg",
     "static/media/PHP_logo.png": "/introduction-page/static/media/PHP_logo.00baeb442607d6f50cfe.png",
-    "static/media/hero-dev.webp": "/introduction-page/static/media/hero-dev.dc48d012d4a6af550899.webp",
     "static/media/laravel-jobs.jpg": "/introduction-page/static/media/laravel-jobs.6d5887e167b884c902ca.jpg",
     "static/media/parker.webp": "/introduction-page/static/media/parker.e82900ed6b20f96b1b1b.webp",
     "static/media/generic-hipster-coffee.jpg": "/introduction-page/static/media/generic-hipster-coffee.5e26e0997a9076503f1b.jpg",
@@ -29,12 +28,12 @@
     "static/media/slick.ttf": "/introduction-page/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/introduction-page/static/media/slick.295183786cd8a1389865.woff",
     "static/media/linkedin.svg": "/introduction-page/static/media/linkedin.7cc49b82cdb910eb71d1b22f8ef52b02.svg",
-    "main.e99a0b5b.css.map": "/introduction-page/static/css/main.e99a0b5b.css.map",
-    "main.1dcfa6b9.js.map": "/introduction-page/static/js/main.1dcfa6b9.js.map",
+    "main.86a29483.css.map": "/introduction-page/static/css/main.86a29483.css.map",
+    "main.a4fe3b98.js.map": "/introduction-page/static/js/main.a4fe3b98.js.map",
     "787.37626faa.chunk.js.map": "/introduction-page/static/js/787.37626faa.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e99a0b5b.css",
-    "static/js/main.1dcfa6b9.js"
+    "static/css/main.86a29483.css",
+    "static/js/main.a4fe3b98.js"
   ]
 }
