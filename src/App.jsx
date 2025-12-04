@@ -14,12 +14,9 @@ import Navigation from "./Components/Navigation";
 import Hero from "./Components/Hero";
 import Footer from "./Components/Footer";
 import ProcessSection from "./Components/ProcessSection";
-import Timeline from "./Components/Timeline";
-import SkillsSection from "./Components/SkillsSection";
-import PortfolioSection from "./Components/PortfolioSection";
+import Timeline from "./Components/Timeline.tsx";
 import AboutSection from "./Components/AboutSection";
 import SocialSection from "./Components/SocialSection";
-import ContactForm from "./Components/ContactForm";
 import SkillsReel from "./Components/SkillsReel";
 import PortfolioReel from "./Components/PortfolioReel";
 
@@ -73,7 +70,7 @@ const timelineData = {
 					image: devImage,
 				},
 				{
-					year: "2025-future",
+					year: "2026-future",
 					title: "Your Company",
 					text: "Bringing my combined experience in design, IT, and development to new challenges. The next step could be working with your company on exciting projects.",
 					classes: "",
@@ -106,11 +103,6 @@ function App() {
 			<SkillsReel />
 
 			<SocialSection />
-
-			{/* has been replaced by SkillsReel and PortfolioReel */}
-			{/* <SkillsSection /> */}
-
-			{/* <PortfolioSection /> */}
 
 			<PortfolioReel />
 			<Footer />
