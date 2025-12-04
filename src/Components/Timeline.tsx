@@ -33,12 +33,9 @@ const Timeline: React.FC<TimelineProps> = ({ data }) => {
                 <div className="timeline__item" key={sectionIdx}>
                     <div className="timeline__grid timeline__grid--center"></div>
                     {section.blocks.map((block, blockIdx) => {
-                        const title = block.title || null;
-                        const text = block.text || null;
-                        const year = block.year || null;
+                        const { title, text, year, image } = block;
                         const position =
                             blockIdx === 0 ? "first" : blockIdx === 1 ? "last" : null;
-                        const image = block.image || null;
                         const onlyOne = section.blocks.length < 2;
 
                         return (
@@ -51,18 +48,14 @@ const Timeline: React.FC<TimelineProps> = ({ data }) => {
                                     {year && <div className="timeline__item-year">{year}</div>}
                                     {(title || text) && (
                                         <div className="timeline__content">
-                                            {title && (
-                                                <h3 className="timeline__item-title">{title}</h3>
-                                            )}
+                                            {title && <h3 className="timeline__item-title">{title}</h3>}
                                             {text && <p className="timeline__item-text">{text}</p>}
                                         </div>
                                     )}
                                     {image && (
                                         <div
                                             className="timeline__image"
-                                            style={{
-                                                backgroundImage: `url(${image})`,
-                                            }}
+                                            style={{ backgroundImage: `url(${image})` }}
                                         ></div>
                                     )}
                                 </div>
