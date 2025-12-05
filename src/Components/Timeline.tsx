@@ -28,9 +28,9 @@ const Timeline: React.FC<TimelineProps> = ({ data }) => {
             : "";
 
     return (
-        <div className={`timeline${yearAligning}`}>
+        <div className={`timeline${yearAligning}`} role="region" aria-label="Career Timeline">
             {data.sections.map((section, sectionIdx) => (
-                <div className="timeline__item" key={sectionIdx}>
+                <article className="timeline__item" key={sectionIdx} aria-label={`Timeline section ${sectionIdx + 1}`}>
                     <div className="timeline__grid timeline__grid--center"></div>
                     {section.blocks.map((block, blockIdx) => {
                         const { title, text, year, image } = block;
@@ -65,7 +65,7 @@ const Timeline: React.FC<TimelineProps> = ({ data }) => {
                             </React.Fragment>
                         );
                     })}
-                </div>
+                </article>
             ))}
         </div>
     );

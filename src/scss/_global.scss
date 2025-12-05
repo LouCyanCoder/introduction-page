@@ -1,0 +1,58 @@
+@import "variables";
+
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	color: #444444;
+	font-family: "Rubik", Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	margin: 0;
+	padding: 0;
+
+	p {
+		font-size: 1.6rem;
+		line-height: 1.5;
+		margin: 0 0 1.5rem 0;
+	}
+}
+
+*:focus-visible {
+	outline: 2px solid $color-primary;
+	outline-offset: 2px;
+}
+
+a:focus-visible,
+button:focus-visible {
+	outline: 3px solid $color-primary;
+	outline-offset: 3px;
+}
+
+// utilities
+.heading {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 3.5rem;
+	margin-bottom: $gap * 2;
+
+	@include mq(1225px) {
+		font-size: 3rem;
+	}
+
+	@include mq(1025px) {
+		font-size: 2.5rem;
+	}
+	@include mq(768px) {
+		font-size: 2rem;
+	}
+}
+
+.color-white {
+	color: $color-white;
+}
+
+.text-uppercase {
+	text-transform: uppercase;
+}

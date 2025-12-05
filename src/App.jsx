@@ -3,13 +3,13 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-// SVGs imported into the components
+// SVG import
 import jpPrintImage from "./img/timeline/jpprint.webp";
 import parkerImage from "./img/timeline/parker.webp";
 import almaImage from "./img/timeline/alma.webp";
 import devImage from "./img/timeline/timelineDev.webp";
 
-// importing separate sections for Rendering
+// sections for Rendering
 import Navigation from "./Components/Navigation";
 import Hero from "./Components/Hero";
 import Footer from "./Components/Footer";
@@ -21,7 +21,6 @@ import SkillsReel from "./Components/SkillsReel";
 import PortfolioReel from "./Components/PortfolioReel";
 
 // data for timeline component
-
 const timelineData = {
 	yearAligning: "top",
 	sections: [

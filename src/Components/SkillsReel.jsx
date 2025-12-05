@@ -71,7 +71,7 @@ const SkillsReel = () => {
 						className={idx === imageIndex ? "skill slide activeSlide" : "slide"}
 						key={idx}
 					>
-						<img src={skill.image} alt={skill.text} />
+						<img src={skill.image} alt={`${skill.text} logo`} />
 						<p className="skill__label text-center">{skill.text}</p>
 					</div>
 				))}
