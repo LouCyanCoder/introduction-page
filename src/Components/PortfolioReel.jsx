@@ -22,7 +22,7 @@ const projects = [
 		description:
 			"Website for a coffee shop. Student Project for the Coding Bootcamp Praha. Coded based on provided psd design.",
 		tech: "HTML, SCSS, Bootstrap",
-		site: "https://loucyancoder.github.io/hipster-coffee-deployment/",
+		site: "",
 		github: "https://github.com/LouCyanCoder/generic-hipster-coffee",
 		active: false,
 	},

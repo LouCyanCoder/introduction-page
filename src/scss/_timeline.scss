@@ -11,9 +11,7 @@ $timeline-year-color: $color-black;
 $timeline-point-size: 2rem;
 $timeline-point-color: $color-secondary;
 $timeline-year-height: $timeline-year-size * $timeline-year-line-height;
-$timeline-year-vertical-spacing: (
-	($gap) + ($timeline-year-height / 1.5)
-); // magic number
+$timeline-year-vertical-spacing: (($gap) + ($timeline-year-height / 1.5));
 
 .timeline {
 	display: flex;

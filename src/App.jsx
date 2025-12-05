@@ -3,28 +3,24 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-// SVGs imported into the components
+// SVG import
 import jpPrintImage from "./img/timeline/jpprint.webp";
 import parkerImage from "./img/timeline/parker.webp";
 import almaImage from "./img/timeline/alma.webp";
 import devImage from "./img/timeline/timelineDev.webp";
 
-// importing separate sections for Rendering
+// sections for Rendering
 import Navigation from "./Components/Navigation";
 import Hero from "./Components/Hero";
 import Footer from "./Components/Footer";
 import ProcessSection from "./Components/ProcessSection";
-import Timeline from "./Components/Timeline";
-import SkillsSection from "./Components/SkillsSection";
-import PortfolioSection from "./Components/PortfolioSection";
+import Timeline from "./Components/Timeline.tsx";
 import AboutSection from "./Components/AboutSection";
 import SocialSection from "./Components/SocialSection";
-import ContactForm from "./Components/ContactForm";
 import SkillsReel from "./Components/SkillsReel";
 import PortfolioReel from "./Components/PortfolioReel";
 
 // data for timeline component
-
 const timelineData = {
 	yearAligning: "top",
 	sections: [
@@ -73,7 +69,7 @@ const timelineData = {
 					image: devImage,
 				},
 				{
-					year: "2025-future",
+					year: "2026-future",
 					title: "Your Company",
 					text: "Bringing my combined experience in design, IT, and development to new challenges. The next step could be working with your company on exciting projects.",
 					classes: "",
@@ -106,11 +102,6 @@ function App() {
 			<SkillsReel />
 
 			<SocialSection />
-
-			{/* has been replaced by SkillsReel and PortfolioReel */}
-			{/* <SkillsSection /> */}
-
-			{/* <PortfolioSection /> */}
 
 			<PortfolioReel />
 			<Footer />
