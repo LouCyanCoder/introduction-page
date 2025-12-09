@@ -1,0 +1,102 @@
+$transition-timing: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+// Can be used:
+// - linear, ease, ease-in, ease-in-out
+// or generate own Bezier curves (link in component README)
+
+@supports not (-ms-high-contrast: none) {
+    // This feature is only for non IE users!
+    .is-animation {
+        // FADE
+
+        [data-animation]:not([data-animation='']) {
+            opacity: 0;
+            transition-duration: 0.5s;
+            transition-timing-function: $transition-timing;
+            transition-property: opacity, transform;
+            backface-visibility: hidden;
+            perspective: 1000;
+            will-change: opacity, transform;
+        }
+
+        [data-animation='fade'] {
+            opacity: 0;
+        }
+
+        [data-animation='fade-bottom'] {
+            transform: translate3d(0, 100px, 0);
+        }
+
+        [data-animation='fade-right'] {
+            transform: translate3d(-200px, 0, 0);
+        }
+
+        [data-animation='fade-left'] {
+            transform: translate3d(200px, 0, 0);
+        }
+
+        [data-animation='fade-down-left'] {
+            transform: translate3d(200px, -100px, 0);
+        }
+
+        [data-animation='fade-down-right'] {
+            transform: translate3d(-200px, -100px, 0);
+        }
+
+        [data-animation='fade-up-left'] {
+            transform: translate3d(200px, 100px, 0);
+        }
+
+        [data-animation='fade-up-right'] {
+            transform: translate3d(-200px, 100px, 0);
+        }
+
+        // ZOOM
+
+        [data-animation='zoom-in'] {
+            transform: scale(0.6);
+        }
+
+        [data-animation='zoom-in'].m-animate {
+            transform: scale(1);
+        }
+
+        [data-animation='zoom-in-right'] {
+            transform: translate3d(-200px, 0, 0) scale(0.6);
+        }
+
+        [data-animation='zoom-in-left'] {
+            transform: translate3d(200px, 0, 0) scale(0.6);
+        }
+
+        [data-animation='zoom-in-bottom'] {
+            transform: translate3d(0, 100px, 0) scale(0.6);
+        }
+
+        [data-animation='zoom-in-up'] {
+            transform: translate3d(0, -100px, 0) scale(0.6);
+        }
+
+        // DURATION
+
+        @for $i from 1 through 30 {
+            [data-animation-duration="#{$i}00"] {
+                transition-duration: #{$i * 100}ms;
+            }
+        }
+
+        // DELAY
+
+        @for $i from 1 through 20 {
+            [data-animation-delay="#{$i}00"] {
+                transition-delay: #{$i * 100}ms;
+            }
+        }
+
+        // run animation
+
+        [data-animation].m-animate {
+            opacity: 1;
+            transform: translateZ(0);
+        }
+    }
+}

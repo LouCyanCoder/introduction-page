@@ -2,8 +2,9 @@ import "./scss/style.scss";
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useAnimation } from "./Components/animation/useAnimation.js";
 
-// SVG import
+// img for timeline component
 import jpPrintImage from "./img/timeline/jpprint.webp";
 import parkerImage from "./img/timeline/parker.webp";
 import almaImage from "./img/timeline/alma.webp";
@@ -84,12 +85,15 @@ function App() {
 		AOS.init();
 	}, []);
 
+	useAnimation(0);
+
 	return (
 		<div className="portfolio-app">
 			<Navigation />
 
 			<Hero
-				title="DEV for hire"
+				title="DEV"
+				subtitle="for hire"
 				promo="Hello, I’m Lucian Nguyen, a web developer passionate about creating clean, user-friendly, and scalable digital solutions. I’d be excited to bring both technical skills and a collaborative mindset to your project."
 			/>
 
