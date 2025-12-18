@@ -1,0 +1,22 @@
+@use "variables" as *;
+@use "mixins";
+
+.container {
+	width: min(1200px, 90vw);
+	margin-inline: auto;
+	padding-inline: $space-md;
+}
+
+.section {
+	padding-block: $space-xl;
+
+	&__title {
+		margin-bottom: $space-md;
+		font-size: clamp(1.5rem, 2vw, 2.25rem);
+	}
+
+	&__content {
+		display: grid;
+		gap: $space-lg;
+	}
+}
