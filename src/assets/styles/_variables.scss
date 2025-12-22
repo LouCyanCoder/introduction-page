@@ -7,7 +7,8 @@ $color-surface: #ffffff;
 $color-text: #1a202c;
 
 // Typography
-$font-family-base: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+$font-primary: "Roboto", system-ui;
+$font-secondary: "Permanent Marker", system-ui;
 $font-size-root: 16px;
 $line-height-base: 1.6;
 
@@ -24,3 +25,9 @@ $space-xxl: 3rem;
 $radius-sm: 0.25rem;
 $radius-md: 0.5rem;
 $radius-lg: 1rem;
+
+// Hero section
+$hero-bg-color: #000;
+$hero-text-color: #fff;
+$hero-perex-color: #000;
+$hero-perex-bg-color: #fff;

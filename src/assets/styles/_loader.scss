@@ -1,0 +1,37 @@
+@use "variables" as *;
+
+.loader-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(3, 5, 10, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: $space-sm;
+    z-index: 999;
+    backdrop-filter: blur(6px);
+}
+
+.loader-spinner {
+    width: 5rem;
+    height: 5rem;
+    border: 4px solid rgba(255, 255, 255, 0.2);
+    border-top-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+.loader-label {
+    color: #f7f8fb;
+    font-family: $font-secondary;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}

@@ -2,351 +2,351 @@
 @use "mixins" as *;
 
 .header {
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  background: linear-gradient(180deg, rgba(5, 10, 25, 0.9) 0%, rgba(5, 10, 25, 0.8) 100%);
-  color: $color-surface;
-  backdrop-filter: blur(12px);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: linear-gradient(180deg, rgba(5, 10, 25, 0.9) 0%, rgba(5, 10, 25, 0.8) 100%);
+    color: $color-surface;
+    backdrop-filter: blur(12px);
 }
 
 .navbar {
-  padding: 1.25rem 0;
+    padding: 1.25rem 0;
 }
 
 .header-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: $space-lg;
-  padding: 0 $space-lg;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: $space-lg;
+    padding: 0 $space-lg;
 }
 
 .brand {
-  display: inline-flex;
-  align-items: center;
+    display: inline-flex;
+    align-items: center;
 }
 
 .burger {
-  display: inline-flex;
-  cursor: pointer;
+    display: inline-flex;
+    cursor: pointer;
 }
 
 .burger-line-wrapper {
-  display: grid;
-  gap: $space-xxs;
+    display: grid;
+    gap: $space-xxs;
 }
 
 .burger-line {
-  width: 1.5rem;
-  height: 0.125rem;
-  background: $color-surface;
-  border-radius: $radius-sm;
+    width: 1.5rem;
+    height: 0.125rem;
+    background: $color-surface;
+    border-radius: $radius-sm;
 }
 
 .menu {
-  position: absolute;
-  inset: 0;
-  background: rgba(5, 10, 25, 0.9);
-  color: $color-surface;
-  display: none;
+    position: absolute;
+    inset: 0;
+    background: rgba(5, 10, 25, 0.9);
+    color: $color-surface;
+    display: none;
 }
 
 .menu-inner {
-  display: flex;
-  flex-direction: column;
-  gap: $space-md;
-  padding: $space-xl;
+    display: flex;
+    flex-direction: column;
+    gap: $space-md;
+    padding: $space-xl;
 }
 
 .menu-link {
-  color: inherit;
+    color: inherit;
 }
 
 .menu-inner,
 .menu-header {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .menu-block {
-  display: none;
+    display: none;
 }
 
 .menu-block-link {
-  display: inline-flex;
-  align-items: center;
-  gap: $space-xs;
+    display: inline-flex;
+    align-items: center;
+    gap: $space-xs;
 }
 
 .menu-link,
 .menu-block-link {
-  font-weight: 600;
-  letter-spacing: 0.02em;
+    font-weight: 600;
+    letter-spacing: 0.02em;
 }
 
 .header-backdrop {
-  display: none;
+    display: none;
 }
 
 @include respond(sm) {
-  .menu-block-link {
-    font-size: 1.0625rem;
-  }
+    .menu-block-link {
+        font-size: 1.0625rem;
+    }
 
-  .menu-block-btn {
-    padding: 0.5625rem 1.375rem;
-  }
+    .menu-block-btn {
+        padding: 0.5625rem 1.375rem;
+    }
 
-  .hero-image-wrapper img.sky {
-    margin-top: -25%;
-    transform: translateY(10%);
-    height: auto;
-  }
+    .hero-image-wrapper img.sky {
+        margin-top: -25%;
+        transform: translateY(10%);
+        height: auto;
+    }
 
-  .hero-image-wrapper img.mountains {
-    margin-top: -10%;
-    height: auto;
-  }
+    .hero-image-wrapper img.mountains {
+        margin-top: -10%;
+        height: auto;
+    }
 
-  .hero-image-wrapper img.man-standing {
-    margin-top: -58%;
-    height: auto;
-  }
+    .hero-image-wrapper img.man-standing {
+        margin-top: -58%;
+        height: auto;
+    }
 }
 
 @include respond(md) {
-  .hero-subtitle {
-    font-size: 1.125rem;
-  }
+    .hero-subtitle {
+        font-size: 1.125rem;
+    }
 
-  .hero-subtitle::before {
-    height: 0.125rem;
-    width: 3.125rem;
-  }
+    .hero-subtitle::before {
+        height: 0.125rem;
+        width: 3.125rem;
+    }
 
-  .hero-title {
-    font-size: 4.125rem;
-    line-height: 4.375rem;
-  }
+    .hero-title {
+        font-size: 4.125rem;
+        line-height: 4.375rem;
+    }
 }
 
 @include respond(lg) {
-  .container {
-    padding: 0 5rem;
-  }
+    .container {
+        padding: 0 5rem;
+    }
 
-  .header-container {
-    padding: 0 5rem;
-  }
+    .header-container {
+        padding: 0 5rem;
+    }
 
-  .navbar {
-    padding: 4rem 0;
-    box-shadow: none;
-    background-color: transparent;
-  }
+    .navbar {
+        padding: 4rem 0;
+        box-shadow: none;
+        background-color: transparent;
+    }
 
-  .on-scroll .navbar {
-    padding: 1.5rem 0;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15),
-      inset 0 -1px 0 rgba($color-surface, 0.15);
-  }
+    .on-scroll .navbar {
+        padding: 1.5rem 0;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15),
+            inset 0 -1px 0 rgba($color-surface, 0.15);
+    }
 
-  .burger {
-    display: none;
-    visibility: hidden;
-  }
+    .burger {
+        display: none;
+        visibility: hidden;
+    }
 
-  .brand svg {
-    max-width: 108px;
-  }
+    .brand svg {
+        max-width: 108px;
+    }
 
-  .menu {
-    position: relative;
-    width: auto;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    background: none;
-    box-shadow: none;
-    top: unset;
-    left: 0;
-    right: unset;
-    transform: unset;
-  }
+    .menu {
+        position: relative;
+        width: auto;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        background: none;
+        box-shadow: none;
+        top: unset;
+        left: 0;
+        right: unset;
+        transform: unset;
+    }
 
-  .menu-inner {
-    display: flex;
-    flex-direction: row;
-    column-gap: 3.125rem;
-    margin: 0 auto;
-    padding: 0;
-    row-gap: 0;
-  }
+    .menu-inner {
+        display: flex;
+        flex-direction: row;
+        column-gap: 3.125rem;
+        margin: 0 auto;
+        padding: 0;
+        row-gap: 0;
+    }
 
-  .menu-block {
-    margin-left: 5.375rem;
-    column-gap: 3.125rem;
-  }
+    .menu-block {
+        margin-left: 5.375rem;
+        column-gap: 3.125rem;
+    }
 
-  .header-backdrop,
-  .menu-header {
-    display: none;
-  }
+    .header-backdrop,
+    .menu-header {
+        display: none;
+    }
 
-  .menu-block-link:hover,
-  .menu-link:hover {
-    color: $color-accent;
-  }
+    .menu-block-link:hover,
+    .menu-link:hover {
+        color: $color-accent;
+    }
 
-  .hero-section {
-    max-height: unset;
-    padding-bottom: 12.5rem;
-  }
+    .hero-section {
+        max-height: unset;
+        padding-bottom: 12.5rem;
+    }
 
-  .hero-section::after {
-    height: 60%;
-  }
+    .hero-section::after {
+        height: 60%;
+    }
 
-  .hero-content {
-    padding: 0 5rem;
-    z-index: 3;
-    top: 14%;
-  }
+    .hero-content {
+        padding: 0 5rem;
+        z-index: 3;
+        top: 14%;
+    }
 
-  .hero-subtitle {
-    font-size: 1.125rem;
-  }
+    .hero-subtitle {
+        font-size: 1.125rem;
+    }
 
-  .hero-subtitle::before {
-    height: 0.125rem;
-    width: 4.5rem;
-  }
+    .hero-subtitle::before {
+        height: 0.125rem;
+        width: 4.5rem;
+    }
 
-  .hero-title {
-    font-size: 5.5rem;
-    line-height: 6.25rem;
-  }
+    .hero-title {
+        font-size: 5.5rem;
+        line-height: 6.25rem;
+    }
 
-  .hero-image-wrapper img.sky {
-    transform: translateY(40%);
-  }
+    .hero-image-wrapper img.sky {
+        transform: translateY(40%);
+    }
 
-  .content-wrapper .content-image {
-    width: auto;
-  }
+    .content-wrapper .content-image {
+        width: auto;
+    }
 
-  .content-image img {
-    width: 35.375rem;
-    height: auto;
-  }
+    .content-image img {
+        width: 35.375rem;
+        height: auto;
+    }
 
-  .content-wrapper:nth-child(odd) .content-image {
-    order: 2;
-  }
+    .content-wrapper:nth-child(odd) .content-image {
+        order: 2;
+    }
 
-  .content-wrapper:nth-child(odd) .content-content {
-    order: 1;
-  }
+    .content-wrapper:nth-child(odd) .content-content {
+        order: 1;
+    }
 
-  .content-wrapper:not(:last-child) {
-    margin-bottom: 12.5rem;
-  }
+    .content-wrapper:not(:last-child) {
+        margin-bottom: 12.5rem;
+    }
 
-  .content-wrapper:nth-child(1) .content-subtitle {
-    margin-bottom: 13rem;
-  }
+    .content-wrapper:nth-child(1) .content-subtitle {
+        margin-bottom: 13rem;
+    }
 
-  .content-subtitle::before {
-    height: 0.125rem;
-    width: 4.5rem;
-  }
+    .content-subtitle::before {
+        height: 0.125rem;
+        width: 4.5rem;
+    }
 
-  .content-section {
-    margin-top: -30%;
-  }
+    .content-section {
+        margin-top: -30%;
+    }
 
-  .content-content {
-    padding-left: 3.125rem;
-  }
+    .content-content {
+        padding-left: 3.125rem;
+    }
 
-  .content-image img {
-    width: 29.125rem;
-    height: auto;
-  }
+    .content-image img {
+        width: 29.125rem;
+        height: auto;
+    }
 
-  .content-row {
-    gap: 4.6875rem;
-    flex-direction: row;
-  }
+    .content-row {
+        gap: 4.6875rem;
+        flex-direction: row;
+    }
 
-  .content-subtitle {
-    font-size: 1.125rem;
-  }
+    .content-subtitle {
+        font-size: 1.125rem;
+    }
 
-  .content-title {
-    font-size: 3.375rem;
-  }
+    .content-title {
+        font-size: 3.375rem;
+    }
 
-  .content-copy {
-    font-size: 1.125rem;
-  }
+    .content-copy {
+        font-size: 1.125rem;
+    }
 
-  .content-subtitle .counter {
-    font-size: 15rem;
-    left: -20%;
-    transform: translateY(-50%);
-  }
+    .content-subtitle .counter {
+        font-size: 15rem;
+        left: -20%;
+        transform: translateY(-50%);
+    }
 
-  footer {
-    padding-top: 12.5rem;
-    padding-bottom: 7.5rem;
-  }
+    footer {
+        padding-top: 12.5rem;
+        padding-bottom: 7.5rem;
+    }
 
-  .footer-row {
-    gap: 6.25rem;
-    flex-direction: row;
-  }
+    .footer-row {
+        gap: 6.25rem;
+        flex-direction: row;
+    }
 }
 
 @include respond(xl) {
-  .content-content {
-    padding-left: 6.25rem;
-  }
+    .content-content {
+        padding-left: 6.25rem;
+    }
 
-  .content-row {
-    gap: 5.3125rem;
-  }
+    .content-row {
+        gap: 5.3125rem;
+    }
 
-  .content-subtitle .counter {
-    left: -20%;
-  }
+    .content-subtitle .counter {
+        left: -20%;
+    }
 }
 
 @include respond(xxl) {
-  .content-content {
-    padding-left: 9.375rem;
-  }
+    .content-content {
+        padding-left: 9.375rem;
+    }
 
-  .content-image img {
-    width: 35.375rem;
-    height: auto;
-  }
+    .content-image img {
+        width: 35.375rem;
+        height: auto;
+    }
 
-  .content-row {
-    gap: 7.125rem;
-  }
+    .content-row {
+        gap: 7.125rem;
+    }
 
-  .content-title {
-    font-size: 4rem;
-  }
+    .content-title {
+        font-size: 4rem;
+    }
 
-  .content-subtitle .counter {
-    left: -40%;
-  }
+    .content-subtitle .counter {
+        left: -40%;
+    }
 
-  .footer-row {
-    gap: 12.5rem;
-  }
+    .footer-row {
+        gap: 12.5rem;
+    }
 }

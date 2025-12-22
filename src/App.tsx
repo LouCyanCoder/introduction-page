@@ -1,12 +1,12 @@
-import Layout from './components/Layout';
+import Layout from './components/Layout'
+import Hero from './components/Hero'
 
-import './assets/styles/main.scss';
+import './assets/styles/main.scss'
 
 function App() {
-
   return (
     <Layout>
-      <></>
+      <Hero />
     </Layout>
   )
 }
