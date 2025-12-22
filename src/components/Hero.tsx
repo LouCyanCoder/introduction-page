@@ -98,8 +98,8 @@ export default function Hero() {
             gsap.set(title, {
                 position: 'absolute',
                 zIndex: 9,
-                top: '10%',
-                left: '75%',
+                top: '15%',
+                left: '65%',
                 xPercent: -50,
                 yPercent: -50,
                 transformOrigin: '50% 50%',
@@ -152,11 +152,11 @@ export default function Hero() {
             gsap.set(foreground, {
                 width: '100%',
                 height: '100vh',
-                xPercent: -50,
-                yPercent: -50,
+                xPercent: 0,
+                yPercent: 0,
                 transformOrigin: '50% 50%',
                 backgroundPosition: '0% 0%',
-                opacity: 0.05,
+                opacity: 0.1,
                 scale: 1,
                 filter: 'brightness(0.6) blur(30px)',
             })
@@ -172,7 +172,7 @@ export default function Hero() {
             }, 0)
         }
 
-        if (foreground || title || canvas) {
+        if (foreground || canvas) {
             breathe = gsap.timeline({ repeat: -1, yoyo: true, defaults: { duration: 3.4, ease: 'sine.inOut' } })
 
             if (foreground) {
@@ -183,9 +183,6 @@ export default function Hero() {
                 breathe.to(canvas, { rotate: 1, scale: 1.03, transformOrigin: '50% 50%' }, 0)
             }
 
-            if (title) {
-                breathe.to(title, { yPercent: -0.01, filter: 'blur(1px)' }, 0)
-            }
         }
 
         ScrollTrigger.addEventListener('scrollStart', pauseBreathe)

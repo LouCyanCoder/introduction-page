@@ -9,4 +9,5 @@ createRoot(document.getElementById('root')!).render(
       <App />
     </SmoothScroll>
   </StrictMode>,
+
 )

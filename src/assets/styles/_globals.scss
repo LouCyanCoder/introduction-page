@@ -33,6 +33,7 @@ main {
   display: flex;
   flex-direction: column;
   flex: 1 0 auto;
+  position: relative;
 }
 
 button,
@@ -48,11 +49,77 @@ a {
 }
 
 h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3 {
+  font-family: $font-secondary;
+  font-weight: 700;
+}
+
+h1,
 .h1 {
-  font-size: 8rem;
+  font-size: 3.5rem;
   margin-bottom: $space-md;
 
   @include respond(md) {
     font-size: 5rem;
+  }
+
+  @include respond(lg) {
+    font-size: 6rem;
+  }
+}
+
+h2,
+.h2 {
+  font-size: 3rem;
+  margin-bottom: $space-md;
+
+  @include respond(md) {
+    font-size: 3.5rem;
+  }
+
+  @include respond(lg) {
+    font-size: 5rem;
+  }
+}
+
+h3,
+.h3 {
+  font-size: 3rem;
+  margin-bottom: $space-md;
+
+  @include respond(lg) {
+    font-size: 4rem;
+  }
+}
+
+main::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.04));
+  background-size: 2% 2%;
+  animation: bg-wave 9s ease-in-out infinite;
+  z-index: 0;
+}
+
+@keyframes bg-wave {
+  0% {
+    background-position: 0% 0%;
+    opacity: 1;
+  }
+
+  50% {
+    background-position: 100% 100%;
+    opacity: 0.85;
+  }
+
+  100% {
+    background-position: 0% 0%;
+    opacity: 1;
   }
 }
