@@ -1,8 +1,10 @@
-import { useEffect, useRef } from 'react'
+import { useRef } from 'react'
 import gsap from 'gsap'
+import { useGSAP } from '@gsap/react'
 import ScrollTrigger from 'gsap/ScrollTrigger'
+import Flip from 'gsap/Flip'
 
-gsap.registerPlugin(ScrollTrigger)
+gsap.registerPlugin(ScrollTrigger, Flip)
 
 export default function NextSection() {
     const sectionRef = useRef<HTMLElement>(null)
@@ -35,41 +37,66 @@ export default function NextSection() {
 
     ]
 
-    useEffect(() => {
+    useGSAP(() => {
         const el = sectionRef.current
         const hero = document.querySelector<HTMLElement>('.hero')
         if (!el || !hero) return
 
-        const ctx = gsap.context(() => {
-            gsap.set(el, { yPercent: 40, opacity: 0 })
+        gsap.set(el, { yPercent: 40, opacity: 0 })
 
-            gsap.to(el, {
-                yPercent: 0,
-                opacity: 1,
-                ease: 'none',
-                scrollTrigger: {
-                    trigger: el,
-                    start: 'top bottom',
-                    end: '+=80%',
-                    scrub: true,
-                    pin: false,
-                },
+        gsap.to(el, {
+            yPercent: 0,
+            opacity: 1,
+            ease: 'none',
+            scrollTrigger: {
+                trigger: el,
+                start: 'top bottom',
+                end: '+=80%',
+                scrub: true,
+                pin: false,
+            },
+        })
+
+        const boxes = Array.from(el.querySelectorAll<HTMLElement>('.perex__box'))
+        const marker = el.querySelector<HTMLElement>('.perex__marker')
+
+        if (marker && boxes.length) {
+            const moveMarker = (box: HTMLElement) => {
+                const state = Flip.getState(marker)
+                Flip.fit(marker, box, {
+                    absolute: true,
+                    duration: 0,
+                })
+                Flip.from(state, {
+                    duration: 0.35,
+                    ease: 'power2.out',
+                    absolute: true,
+                    simple: true,
+                })
+            }
+
+            moveMarker(boxes[0])
+
+            boxes.forEach((box) => {
+                ScrollTrigger.create({
+                    trigger: box,
+                    start: 'top center',
+                    onEnter: () => moveMarker(box),
+                    onEnterBack: () => moveMarker(box),
+                })
             })
-        }, sectionRef)
-
-        return () => ctx.revert()
-    }, [])
+        }
+    }, { scope: sectionRef })
 
     return (
         <section ref={sectionRef} className="perex section">
             <div className="container">
                 <h2 className="perex__title">Next Section</h2>
                 <div className="perex__list">
+                    <div className="perex__marker" />
                     {items.map((item, idx) => (
                         <article className={`perex__item${idx % 2 === 1 ? ' is-reversed' : ''}`} key={item.number}>
-                            <div className="perex__box">
-                                {idx === 0 && <div className="perex__marker" />}
-                            </div>
+                            <div className="perex__box" />
                             <div className="perex__item-texts">
                                 <span className="perex__number">{item.number}</span>
                                 <h3 className="perex__item-title">{item.title}</h3>

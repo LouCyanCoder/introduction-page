@@ -28,6 +28,7 @@
     margin-top: 2rem;
     display: grid;
     gap: 1.5rem;
+    position: relative;
 }
 
 .perex__item {
@@ -81,6 +82,24 @@
 .perex__item-text {
     line-height: 1.6;
     color: #e6e7ea;
+}
+
+.perex__box {
+    position: relative;
+}
+
+.perex__marker {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 14px;
+    height: 14px;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    transform: translate(-50%, 0);
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.25);
+    pointer-events: none;
 }
 
 .perex__title {
