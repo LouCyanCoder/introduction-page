@@ -51,9 +51,11 @@ export default function NextSection() {
             scrollTrigger: {
                 trigger: el,
                 start: 'top bottom',
-                end: '+=80%',
+                end: '100%',
                 scrub: true,
                 pin: false,
+                invalidateOnRefresh: true,
+                markers: true
             },
         })
 
@@ -63,26 +65,33 @@ export default function NextSection() {
         if (marker && boxes.length) {
             const moveMarker = (box: HTMLElement) => {
                 const state = Flip.getState(marker)
-                Flip.fit(marker, box, {
-                    absolute: true,
-                    duration: 0,
-                })
+                box.appendChild(marker)
                 Flip.from(state, {
                     duration: 0.35,
                     ease: 'power2.out',
-                    absolute: true,
-                    simple: true,
                 })
             }
 
-            moveMarker(boxes[0])
+            boxes[0].appendChild(marker)
 
-            boxes.forEach((box) => {
+            boxes.forEach((box, index) => {
                 ScrollTrigger.create({
                     trigger: box,
                     start: 'top center',
+                    end: 'bottom center',
                     onEnter: () => moveMarker(box),
                     onEnterBack: () => moveMarker(box),
+                    onLeave: () => {
+                        if (index < boxes.length - 1) {
+                            moveMarker(boxes[index + 1])
+                        }
+                    },
+                    onLeaveBack: () => {
+                        if (index > 0) {
+                            moveMarker(boxes[index - 1])
+                        }
+                    },
+                    invalidateOnRefresh: true,
                 })
             })
         }

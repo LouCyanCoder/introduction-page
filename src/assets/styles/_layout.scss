@@ -79,5 +79,5 @@
 	filter: blur(0.5px);
 	pointer-events: none;
 	z-index: 60;
-	transform: translate3d(-9999px, -9999px, 0);
+	transform: translate3d(-9999px, -9999px, 0) translate(-50%, -50%);
 }
