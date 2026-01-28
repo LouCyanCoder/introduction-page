@@ -43,7 +43,7 @@ export default function Layout({ children }: Props) {
     const loop = () => {
       x += (tx - x) * lerp
       y += (ty - y) * lerp
-      el.style.transform = `translate3d(${x}px, ${y}px, 0)`
+      el.style.transform = `translate3d(${x}px, ${y}px, 0) translate(-50%, -50%)`
       rafId = window.requestAnimationFrame(loop)
     }
 

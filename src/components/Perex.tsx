@@ -50,9 +50,11 @@ export default function NextSection() {
             scrollTrigger: {
                 trigger: el,
                 start: 'top bottom',
-                end: '+=80%',
+                end: '100%',
                 scrub: true,
                 pin: false,
+                invalidateOnRefresh: true,
+                markers: true
             },
         })
 
