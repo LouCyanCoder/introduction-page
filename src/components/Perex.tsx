@@ -54,7 +54,7 @@ export default function NextSection() {
                 scrub: true,
                 pin: false,
                 invalidateOnRefresh: true,
-                markers: true
+                // markers: true
             },
         })
 
