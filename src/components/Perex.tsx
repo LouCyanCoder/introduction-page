@@ -46,7 +46,6 @@ export default function NextSection() {
 
         gsap.to(el, {
             yPercent: 0,
-            opacity: 1,
             ease: 'none',
             scrollTrigger: {
                 trigger: el,
@@ -57,35 +56,47 @@ export default function NextSection() {
             },
         })
 
-        const boxes = Array.from(el.querySelectorAll<HTMLElement>('.perex__box'))
-        const marker = el.querySelector<HTMLElement>('.perex__marker')
+        gsap.to(el, {
+            opacity: 1,
+            ease: 'none',
+            scrollTrigger: {
+                trigger: el,
+                start: 'top 95%',
+                end: 'top 40%',
+                scrub: true,
+                pin: false,
+            },
+        })
 
-        if (marker && boxes.length) {
-            const moveMarker = (box: HTMLElement) => {
-                const state = Flip.getState(marker)
-                Flip.fit(marker, box, {
-                    absolute: true,
-                    duration: 0,
-                })
-                Flip.from(state, {
-                    duration: 0.35,
-                    ease: 'power2.out',
-                    absolute: true,
-                    simple: true,
-                })
-            }
+        // const boxes = Array.from(el.querySelectorAll<HTMLElement>('.perex__box'))
+        // const marker = el.querySelector<HTMLElement>('.perex__marker')
 
-            moveMarker(boxes[0])
+        // if (marker && boxes.length) {
+        //     const moveMarker = (box: HTMLElement) => {
+        //         const state = Flip.getState(marker)
+        //         Flip.fit(marker, box, {
+        //             absolute: true,
+        //             duration: 0,
+        //         })
+        //         Flip.from(state, {
+        //             duration: 0.35,
+        //             ease: 'power2.out',
+        //             absolute: true,
+        //             simple: true,
+        //         })
+        //     }
 
-            boxes.forEach((box) => {
-                ScrollTrigger.create({
-                    trigger: box,
-                    start: 'top center',
-                    onEnter: () => moveMarker(box),
-                    onEnterBack: () => moveMarker(box),
-                })
-            })
-        }
+        //     moveMarker(boxes[0])
+
+        //     boxes.forEach((box) => {
+        //         ScrollTrigger.create({
+        //             trigger: box,
+        //             start: 'top center',
+        //             onEnter: () => moveMarker(box),
+        //             onEnterBack: () => moveMarker(box),
+        //         })
+        //     })
+        // }
     }, { scope: sectionRef })
 
     return (

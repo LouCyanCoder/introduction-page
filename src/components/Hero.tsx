@@ -7,8 +7,13 @@ import SplitText from 'gsap/SplitText'
 gsap.registerPlugin(ScrollTrigger, SplitText)
 
 const FRAME_COUNT = 213
+const PROGRESS_TARGET = Math.min(FRAME_COUNT, 20)
 
-export default function Hero() {
+type HeroProps = {
+    onProgress?: (p: number) => void
+}
+
+export default function Hero({ onProgress }: HeroProps) {
     const sectionRef = useRef<HTMLElement>(null)
     const dom = useRef({
         canvas: null as HTMLCanvasElement | null,
@@ -30,9 +35,21 @@ export default function Hero() {
         canvas.width = window.innerWidth + 10
         canvas.height = window.innerHeight + 10
 
-        // Preload images
+        let loaded = 0
+
+        const report = () => {
+            const pct = Math.min(loaded / PROGRESS_TARGET, 1)
+            onProgress?.(pct)
+        }
+
+        // Preload images with progress
         for (let i = 1; i <= FRAME_COUNT; i++) {
             const img = new Image()
+            img.onload = img.onerror = () => {
+                loaded += 1
+                if (loaded === 1) render()
+                report()
+            }
             img.src = `/hero/frames/hero_${String(i).padStart(4, '0')}.jpg`
             images.current.push(img)
         }
@@ -61,8 +78,6 @@ export default function Hero() {
                 img.height * scale
             )
         }
-
-        images.current[0].onload = render
 
         const handleResize = () => {
             canvas.width = window.innerWidth

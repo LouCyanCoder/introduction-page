@@ -81,3 +81,54 @@
 	z-index: 60;
 	transform: translate3d(-9999px, -9999px, 0);
 }
+
+.loader-overlay {
+	position: fixed;
+	inset: 0;
+	background: rgba(3, 5, 10, 0.9);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: $space-sm;
+	z-index: 999;
+	backdrop-filter: blur(6px);
+}
+
+.loader-spinner {
+	width: 64px;
+	height: 64px;
+	border: 4px solid rgba(255, 255, 255, 0.2);
+	border-top-color: rgba(255, 255, 255, 0.8);
+	border-radius: 50%;
+	animation: spin 1s linear infinite;
+}
+
+.loader-bar {
+	width: 220px;
+	height: 6px;
+	background: rgba(255, 255, 255, 0.12);
+	border-radius: 999px;
+	overflow: hidden;
+}
+
+.loader-bar__fill {
+	height: 100%;
+	width: 0;
+	background: linear-gradient(90deg, #7dd3fc, #c084fc);
+	transition: width 0.2s ease;
+}
+
+.loader-label {
+	color: #f7f8fb;
+	font-family: $font-secondary;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	font-size: 0.85rem;
+}
+
+@keyframes spin {
+	to {
+		transform: rotate(360deg);
+	}
+}

@@ -1,25 +1,13 @@
 import React, { useEffect, useRef, useState } from 'react'
 import Header from './Header.tsx'
 import Footer from './Footer.tsx'
-import Loader from './Loader'
 
 type Props = { children: React.ReactNode }
 
 export default function Layout({ children }: Props) {
-  const [isLoading, setIsLoading] = useState(true)
   const [hideSwipe, setHideSwipe] = useState(false)
   const scrollTimeout = useRef<number | null>(null)
   const cursorRef = useRef<HTMLDivElement | null>(null)
-
-  useEffect(() => {
-    const finish = () => setIsLoading(false)
-    window.addEventListener('load', finish)
-    const fallback = window.setTimeout(finish, 2000)
-    return () => {
-      window.removeEventListener('load', finish)
-      window.clearTimeout(fallback)
-    }
-  }, [])
 
   useEffect(() => {
     const handleScroll = () => {
@@ -82,7 +70,6 @@ export default function Layout({ children }: Props) {
       </div>
 
       {/* <Footer /> */}
-      <Loader active={isLoading} />
     </div>
   )
 }
