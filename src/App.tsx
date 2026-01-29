@@ -49,7 +49,7 @@ function App() {
             image: parkerImage,
           },
           {
-            year: "2018-2021",
+            year: "2018-2022",
             title: "IT Specialist / Sysadmin",
             text: "Provided IT services for international clients at Parker Hannifin and others. Administered servers and networks, managed backups (VEEAM, Veritas), deployed systems via Active Directory & SCCM, and collaborated on large-scale IT upgrades.",
             classes: "",

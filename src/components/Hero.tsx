@@ -31,7 +31,7 @@ export default function Hero({ onProgress }: HeroProps) {
         const ctx = canvas.getContext('2d')
         if (!ctx) return
 
-        // Set canvas size
+        // canvas size
         canvas.width = window.innerWidth + 10
         canvas.height = window.innerHeight + 10
 
@@ -42,7 +42,7 @@ export default function Hero({ onProgress }: HeroProps) {
             onProgress?.(pct)
         }
 
-        // Preload images with progress
+        // images with progress
         for (let i = 1; i <= FRAME_COUNT; i++) {
             const img = new Image()
             img.onload = img.onerror = () => {
@@ -66,7 +66,7 @@ export default function Hero({ onProgress }: HeroProps) {
                 canvas.height / img.height
             )
 
-            // Position: right center (like object-position: right center)
+           
             const x = canvas.width - img.width * scale
             const y = (canvas.height - img.height * scale) / 2
 
