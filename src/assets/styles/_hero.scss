@@ -22,7 +22,6 @@ body {
     &::after {
         content: '';
         position: absolute;
-
         right: 0;
         bottom: -4rem;
         left: 0;
@@ -50,7 +49,6 @@ body {
     pointer-events: none;
     user-select: none;
     z-index: 10;
-    background: url('/hero/pattern.svg');
     background-repeat: repeat;
     background-size: 400px 400px;
     pointer-events: none;

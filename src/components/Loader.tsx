@@ -1,5 +1,3 @@
-import React from 'react'
-
 type LoaderProps = {
     active: boolean
     progress?: number

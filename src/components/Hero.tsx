@@ -8,6 +8,11 @@ gsap.registerPlugin(ScrollTrigger, SplitText)
 
 const FRAME_COUNT = 213
 const PROGRESS_TARGET = Math.min(FRAME_COUNT, 20)
+const asset = (path: string) => new URL(
+    path.replace(/^\//, ''),
+    `${window.location.origin}${import.meta.env.BASE_URL}`
+).toString()
+const FIRST_FRAME = asset('hero/frames/hero_0001.jpg')
 
 type HeroProps = {
     onProgress?: (p: number) => void
@@ -50,7 +55,7 @@ export default function Hero({ onProgress }: HeroProps) {
                 if (loaded === 1) render()
                 report()
             }
-            img.src = `/hero/frames/hero_${String(i).padStart(4, '0')}.jpg`
+            img.src = asset(`hero/frames/hero_${String(i).padStart(4, '0')}.jpg`)
             images.current.push(img)
         }
 
@@ -66,7 +71,7 @@ export default function Hero({ onProgress }: HeroProps) {
                 canvas.height / img.height
             )
 
-           
+
             const x = canvas.width - img.width * scale
             const y = (canvas.height - img.height * scale) / 2
 
@@ -218,8 +223,19 @@ export default function Hero({ onProgress }: HeroProps) {
             <div className="hero__content">
                 <h1 ref={(el) => { dom.current.title = el }} className='hero__title'>Lucian <br />Nguyen <br /> <span className='hero__subtitle'>web developer</span></h1>
 
-                <canvas ref={(el) => { dom.current.canvas = el }} />
-                <div ref={(el) => { dom.current.foreground = el }} className="hero__foreground" />
+                <canvas
+                    ref={(el) => { dom.current.canvas = el }}
+                    style={{
+                        backgroundImage: `url(${FIRST_FRAME})`,
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center',
+                    }}
+                />
+                <div
+                    ref={(el) => { dom.current.foreground = el }}
+                    className="hero__foreground"
+                    style={{ backgroundImage: `url(${asset('hero/pattern.svg')})` }}
+                />
             </div>
 
         </section>

@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
-import Header from './Header.tsx'
-import Footer from './Footer.tsx'
+// import Header from './Header.tsx'
+// import Footer from './Footer.tsx'
 
 type Props = { children: React.ReactNode }
 

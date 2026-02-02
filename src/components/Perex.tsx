@@ -2,7 +2,7 @@ import { useRef } from 'react'
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
 import ScrollTrigger from 'gsap/ScrollTrigger'
-import Flip from 'gsap/Flip'
+import { Flip } from 'gsap/all'
 
 gsap.registerPlugin(ScrollTrigger, Flip)
 

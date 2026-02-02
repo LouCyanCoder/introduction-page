@@ -1,15 +1,20 @@
 import Layout from './components/Layout'
 import Hero from './components/Hero'
-import Perex from './components/Perex'
+// import Perex from './components/Perex'
 import Loader from './components/Loader'
 import Timeline from './components/Timeline'
 
 import { useEffect, useState } from 'react'
 
-const jpPrintImage = '/timeline/jpprint.webp'
-const parkerImage = '/timeline/parker.webp'
-const almaImage = '/timeline/alma.webp'
-const devImage = '/timeline/timelineDev.webp'
+const asset = (path: string) => new URL(
+  path.replace(/^\//, ''),
+  `${window.location.origin}${import.meta.env.BASE_URL}`
+).toString()
+
+const jpPrintImage = asset('timeline/jpprint.webp')
+const parkerImage = asset('timeline/parker.webp')
+const almaImage = asset('timeline/alma.webp')
+const devImage = asset('timeline/timelineDev.webp')
 
 import './assets/styles/main.scss'
 
@@ -90,7 +95,7 @@ function App() {
       <Hero onProgress={setProgress} />
 
       <Timeline data={timelineData} />
-      <Perex />
+      {/* <Perex /> */}
       <Loader active={isLoading} progress={progress} />
     </Layout>
   )
